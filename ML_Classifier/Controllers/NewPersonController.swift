@@ -22,6 +22,7 @@ class NewPersonController: UITableViewController {
     @IBOutlet var ageTextField: RoundedBorderTextField! {
         didSet {
             ageTextField.tag = 2
+            ageTextField.keyboardType = .asciiCapableNumberPad
             ageTextField.delegate = self
         }
     }
@@ -34,42 +35,49 @@ class NewPersonController: UITableViewController {
     @IBOutlet var preganTextField: RoundedBorderTextField! {
         didSet {
             preganTextField.tag = 4
+            preganTextField.keyboardType = .asciiCapableNumberPad
             preganTextField.delegate = self
         }
     }
     @IBOutlet var glucoseTextField: RoundedBorderTextField! {
         didSet {
             glucoseTextField.tag = 5
+            glucoseTextField.keyboardType = .asciiCapableNumberPad
             glucoseTextField.delegate = self
         }
     }
     @IBOutlet var bloodTextField: RoundedBorderTextField! {
         didSet {
             bloodTextField.tag = 6
+            bloodTextField.keyboardType = .asciiCapableNumberPad
             bloodTextField.delegate = self
         }
     }
     @IBOutlet var skinthicTextField: RoundedBorderTextField! {
         didSet {
             skinthicTextField.tag = 7
+            skinthicTextField.keyboardType = .asciiCapableNumberPad
             skinthicTextField.delegate = self
         }
     }
     @IBOutlet var InsulineTextField: RoundedBorderTextField! {
         didSet {
             InsulineTextField.tag = 8
+            InsulineTextField.keyboardType = .asciiCapableNumberPad
             InsulineTextField.delegate = self
         }
     }
     @IBOutlet var BMITextField: RoundedBorderTextField! {
         didSet {
             BMITextField.tag = 9
+            BMITextField.keyboardType = .asciiCapableNumberPad
             BMITextField.delegate = self
         }
     }
     @IBOutlet var FuncTextField: RoundedBorderTextField! {
         didSet {
             FuncTextField.tag = 10
+            FuncTextField.keyboardType = .asciiCapableNumberPad
             FuncTextField.delegate = self
         }
     }
