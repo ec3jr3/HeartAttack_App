@@ -10,7 +10,7 @@ import CoreData
 
 class NewPersonController: UITableViewController {
     
-    
+    var personEdit: ProfileInfo = ProfileInfo()
     //var person: PersonIn!
     
     @IBOutlet var nameTextField: RoundedBorderTextField! {

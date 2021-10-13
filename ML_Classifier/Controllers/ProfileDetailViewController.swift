@@ -84,5 +84,9 @@ extension ProfileDetailViewController: UITableViewDataSource, UITableViewDelegat
                 let destinationController = segue.destination as! TestViewController
                 destinationController.personTest = self.person
             }
+        /*else if segue.identifier == "editPerson" {
+            let destinationController = segue.destination as! NewPersonController
+            destinationController.personEdit = self.person
+            }*/
         }
 }
