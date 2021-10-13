@@ -7,23 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50BB14D270FA0AA00CA81D5 /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB14C270FA0A900CA81D5 /* SAButton.swift */; };
+		B52261AD27125E7C000300A7 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261AC27125E7C000300A7 /* InformationViewController.swift */; };
+		B52261AF27134B53000300A7 /* InsulineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261AE27134B53000300A7 /* InsulineCell.swift */; };
+		B52261B127134E76000300A7 /* PregnanciesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261B027134E76000300A7 /* PregnanciesCell.swift */; };
+		B52261B327134E85000300A7 /* GlucoseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261B227134E85000300A7 /* GlucoseCell.swift */; };
+		B52261B527134E95000300A7 /* BloodPressureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261B427134E95000300A7 /* BloodPressureCell.swift */; };
+		B52261B727134EA3000300A7 /* SkinThicknessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261B627134EA3000300A7 /* SkinThicknessCell.swift */; };
+		B52261B927134EAE000300A7 /* BMICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261B827134EAE000300A7 /* BMICell.swift */; };
+		B52261BB27134EBA000300A7 /* DiabetesFuncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261BA27134EBA000300A7 /* DiabetesFuncCell.swift */; };
+		B56A504C2706418B0078E5D3 /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A504B2706418B0078E5D3 /* ProfileDetailViewController.swift */; };
+		B56A504E270648D50078E5D3 /* PersonDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A504D270648D50078E5D3 /* PersonDetailHeaderView.swift */; };
+		B56A5050270650B60078E5D3 /* PersonDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A504F270650B60078E5D3 /* PersonDetailTextCell.swift */; };
+		B56A50522706577D0078E5D3 /* PersonDetailTwoColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A50512706577D0078E5D3 /* PersonDetailTwoColumnCell.swift */; };
+		B56A505527066E5E0078E5D3 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A505427066E5E0078E5D3 /* NavigationController.swift */; };
 		B59862E42703A5C2005078A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59862E32703A5C2005078A4 /* AppDelegate.swift */; };
 		B59862E62703A5C2005078A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59862E52703A5C2005078A4 /* SceneDelegate.swift */; };
-		B59862E82703A5C2005078A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59862E72703A5C2005078A4 /* ViewController.swift */; };
 		B59862EB2703A5C2005078A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59862E92703A5C2005078A4 /* Main.storyboard */; };
 		B59862ED2703A5C4005078A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59862EC2703A5C4005078A4 /* Assets.xcassets */; };
 		B59862F02703A5C4005078A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59862EE2703A5C4005078A4 /* LaunchScreen.storyboard */; };
+		B59862FE2703A743005078A4 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59862FD2703A743005078A4 /* ProfileTableViewController.swift */; };
+		B59863002703A774005078A4 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59862FF2703A774005078A4 /* TestViewController.swift */; };
+		B59863022703A789005078A4 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59863012703A789005078A4 /* PersonTableViewCell.swift */; };
+		B59863062703B574005078A4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59863052703B574005078A4 /* Person.swift */; };
+		B59863082703B925005078A4 /* PersonDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59863072703B925005078A4 /* PersonDiffableDataSource.swift */; };
+		B59FAB542707B97700D46B89 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FAB532707B97700D46B89 /* RoundedTextField.swift */; };
+		B59FAB572707BAA600D46B89 /* NewPersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FAB562707BAA600D46B89 /* NewPersonController.swift */; };
+		B5C63B92270EA99600D01D56 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B91270EA99600D01D56 /* AboutUsViewController.swift */; };
+		B5C63B94270EAAF800D01D56 /* AboutUsLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B93270EAAF800D01D56 /* AboutUsLogoView.swift */; };
+		B5C63B96270EB14C00D01D56 /* DescriptionTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B95270EB14B00D01D56 /* DescriptionTextCell.swift */; };
+		B5C63B98270EB21300D01D56 /* VersionColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B97270EB21300D01D56 /* VersionColumnCell.swift */; };
+		B5C63B9A270EB52900D01D56 /* ConnectWithUsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B99270EB52900D01D56 /* ConnectWithUsCell.swift */; };
+		B5C63B9C270EB7F700D01D56 /* ContactUsLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B9B270EB7F700D01D56 /* ContactUsLinkCell.swift */; };
+		B5C63B9E270EBC0200D01D56 /* TwitterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B9D270EBC0200D01D56 /* TwitterCell.swift */; };
+		B5C63BA0270EBDD800D01D56 /* FacebookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B9F270EBDD800D01D56 /* FacebookCell.swift */; };
+		B5C63BA2270EC2F100D01D56 /* MLHeaderview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63BA1270EC2F100D01D56 /* MLHeaderview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B50BB14C270FA0A900CA81D5 /* SAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
+		B52261AC27125E7C000300A7 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		B52261AE27134B53000300A7 /* InsulineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulineCell.swift; sourceTree = "<group>"; };
+		B52261B027134E76000300A7 /* PregnanciesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnanciesCell.swift; sourceTree = "<group>"; };
+		B52261B227134E85000300A7 /* GlucoseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlucoseCell.swift; sourceTree = "<group>"; };
+		B52261B427134E95000300A7 /* BloodPressureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureCell.swift; sourceTree = "<group>"; };
+		B52261B627134EA3000300A7 /* SkinThicknessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinThicknessCell.swift; sourceTree = "<group>"; };
+		B52261B827134EAE000300A7 /* BMICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICell.swift; sourceTree = "<group>"; };
+		B52261BA27134EBA000300A7 /* DiabetesFuncCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabetesFuncCell.swift; sourceTree = "<group>"; };
+		B56A504B2706418B0078E5D3 /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
+		B56A504D270648D50078E5D3 /* PersonDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailHeaderView.swift; sourceTree = "<group>"; };
+		B56A504F270650B60078E5D3 /* PersonDetailTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailTextCell.swift; sourceTree = "<group>"; };
+		B56A50512706577D0078E5D3 /* PersonDetailTwoColumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailTwoColumnCell.swift; sourceTree = "<group>"; };
+		B56A505427066E5E0078E5D3 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		B59862E02703A5C2005078A4 /* ML_Classifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ML_Classifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59862E32703A5C2005078A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B59862E52703A5C2005078A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B59862E72703A5C2005078A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B59862EA2703A5C2005078A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B59862EC2703A5C4005078A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B59862EF2703A5C4005078A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B59862F12703A5C4005078A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B59862FD2703A743005078A4 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		B59862FF2703A774005078A4 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		B59863012703A789005078A4 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		B59863052703B574005078A4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B59863072703B925005078A4 /* PersonDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDiffableDataSource.swift; sourceTree = "<group>"; };
+		B59FAB532707B97700D46B89 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		B59FAB562707BAA600D46B89 /* NewPersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonController.swift; sourceTree = "<group>"; };
+		B5BBF76627151F060008BE32 /* ML_Classifier copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ML_Classifier copy-Info.plist"; path = "/Users/andrescastellanos/Desktop/Xcode/MyApps/ML_Classifier/ML_Classifier copy-Info.plist"; sourceTree = "<absolute>"; };
+		B5C63B91270EA99600D01D56 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		B5C63B93270EAAF800D01D56 /* AboutUsLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsLogoView.swift; sourceTree = "<group>"; };
+		B5C63B95270EB14B00D01D56 /* DescriptionTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTextCell.swift; sourceTree = "<group>"; };
+		B5C63B97270EB21300D01D56 /* VersionColumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionColumnCell.swift; sourceTree = "<group>"; };
+		B5C63B99270EB52900D01D56 /* ConnectWithUsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectWithUsCell.swift; sourceTree = "<group>"; };
+		B5C63B9B270EB7F700D01D56 /* ContactUsLinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsLinkCell.swift; sourceTree = "<group>"; };
+		B5C63B9D270EBC0200D01D56 /* TwitterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCell.swift; sourceTree = "<group>"; };
+		B5C63B9F270EBDD800D01D56 /* FacebookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookCell.swift; sourceTree = "<group>"; };
+		B5C63BA1270EC2F100D01D56 /* MLHeaderview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLHeaderview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +101,7 @@
 			children = (
 				B59862E22703A5C2005078A4 /* ML_Classifier */,
 				B59862E12703A5C2005078A4 /* Products */,
+				B5BBF76627151F060008BE32 /* ML_Classifier copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +116,84 @@
 		B59862E22703A5C2005078A4 /* ML_Classifier */ = {
 			isa = PBXGroup;
 			children = (
+				B59862FC2703A636005078A4 /* StoryBoard */,
+				B59862F82703A5E1005078A4 /* Views */,
+				B59862F72703A5D8005078A4 /* Controllers */,
+				B59862FA2703A5FB005078A4 /* Model */,
+				B59862F92703A5F2005078A4 /* Assets */,
 				B59862E32703A5C2005078A4 /* AppDelegate.swift */,
 				B59862E52703A5C2005078A4 /* SceneDelegate.swift */,
-				B59862E72703A5C2005078A4 /* ViewController.swift */,
-				B59862E92703A5C2005078A4 /* Main.storyboard */,
-				B59862EC2703A5C4005078A4 /* Assets.xcassets */,
-				B59862EE2703A5C4005078A4 /* LaunchScreen.storyboard */,
 				B59862F12703A5C4005078A4 /* Info.plist */,
+				B50BB14C270FA0A900CA81D5 /* SAButton.swift */,
 			);
 			path = ML_Classifier;
+			sourceTree = "<group>";
+		};
+		B59862F72703A5D8005078A4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B59862FD2703A743005078A4 /* ProfileTableViewController.swift */,
+				B59862FF2703A774005078A4 /* TestViewController.swift */,
+				B56A504B2706418B0078E5D3 /* ProfileDetailViewController.swift */,
+				B56A505427066E5E0078E5D3 /* NavigationController.swift */,
+				B59FAB562707BAA600D46B89 /* NewPersonController.swift */,
+				B5C63B91270EA99600D01D56 /* AboutUsViewController.swift */,
+				B52261AC27125E7C000300A7 /* InformationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B59862F82703A5E1005078A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B59863012703A789005078A4 /* PersonTableViewCell.swift */,
+				B56A504D270648D50078E5D3 /* PersonDetailHeaderView.swift */,
+				B56A504F270650B60078E5D3 /* PersonDetailTextCell.swift */,
+				B56A50512706577D0078E5D3 /* PersonDetailTwoColumnCell.swift */,
+				B59FAB532707B97700D46B89 /* RoundedTextField.swift */,
+				B5C63B93270EAAF800D01D56 /* AboutUsLogoView.swift */,
+				B5C63B95270EB14B00D01D56 /* DescriptionTextCell.swift */,
+				B5C63B97270EB21300D01D56 /* VersionColumnCell.swift */,
+				B5C63B99270EB52900D01D56 /* ConnectWithUsCell.swift */,
+				B5C63B9B270EB7F700D01D56 /* ContactUsLinkCell.swift */,
+				B5C63B9D270EBC0200D01D56 /* TwitterCell.swift */,
+				B5C63B9F270EBDD800D01D56 /* FacebookCell.swift */,
+				B5C63BA1270EC2F100D01D56 /* MLHeaderview.swift */,
+				B52261AE27134B53000300A7 /* InsulineCell.swift */,
+				B52261B027134E76000300A7 /* PregnanciesCell.swift */,
+				B52261B227134E85000300A7 /* GlucoseCell.swift */,
+				B52261B427134E95000300A7 /* BloodPressureCell.swift */,
+				B52261B627134EA3000300A7 /* SkinThicknessCell.swift */,
+				B52261B827134EAE000300A7 /* BMICell.swift */,
+				B52261BA27134EBA000300A7 /* DiabetesFuncCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B59862F92703A5F2005078A4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B59862EC2703A5C4005078A4 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B59862FA2703A5FB005078A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B59863052703B574005078A4 /* Person.swift */,
+				B59863072703B925005078A4 /* PersonDiffableDataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B59862FC2703A636005078A4 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				B59862E92703A5C2005078A4 /* Main.storyboard */,
+				B59862EE2703A5C4005078A4 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +267,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B59862E82703A5C2005078A4 /* ViewController.swift in Sources */,
+				B56A5050270650B60078E5D3 /* PersonDetailTextCell.swift in Sources */,
+				B52261B727134EA3000300A7 /* SkinThicknessCell.swift in Sources */,
+				B52261B927134EAE000300A7 /* BMICell.swift in Sources */,
+				B50BB14D270FA0AA00CA81D5 /* SAButton.swift in Sources */,
+				B52261B127134E76000300A7 /* PregnanciesCell.swift in Sources */,
+				B59863082703B925005078A4 /* PersonDiffableDataSource.swift in Sources */,
+				B59863022703A789005078A4 /* PersonTableViewCell.swift in Sources */,
+				B59863002703A774005078A4 /* TestViewController.swift in Sources */,
+				B5C63B98270EB21300D01D56 /* VersionColumnCell.swift in Sources */,
+				B52261AF27134B53000300A7 /* InsulineCell.swift in Sources */,
+				B56A504E270648D50078E5D3 /* PersonDetailHeaderView.swift in Sources */,
+				B5C63B9A270EB52900D01D56 /* ConnectWithUsCell.swift in Sources */,
+				B56A505527066E5E0078E5D3 /* NavigationController.swift in Sources */,
+				B5C63B9C270EB7F700D01D56 /* ContactUsLinkCell.swift in Sources */,
+				B56A50522706577D0078E5D3 /* PersonDetailTwoColumnCell.swift in Sources */,
+				B5C63B96270EB14C00D01D56 /* DescriptionTextCell.swift in Sources */,
+				B52261B327134E85000300A7 /* GlucoseCell.swift in Sources */,
 				B59862E42703A5C2005078A4 /* AppDelegate.swift in Sources */,
+				B59FAB572707BAA600D46B89 /* NewPersonController.swift in Sources */,
+				B56A504C2706418B0078E5D3 /* ProfileDetailViewController.swift in Sources */,
+				B5C63B92270EA99600D01D56 /* AboutUsViewController.swift in Sources */,
+				B59862FE2703A743005078A4 /* ProfileTableViewController.swift in Sources */,
+				B52261B527134E95000300A7 /* BloodPressureCell.swift in Sources */,
+				B59863062703B574005078A4 /* Person.swift in Sources */,
+				B59FAB542707B97700D46B89 /* RoundedTextField.swift in Sources */,
+				B52261AD27125E7C000300A7 /* InformationViewController.swift in Sources */,
 				B59862E62703A5C2005078A4 /* SceneDelegate.swift in Sources */,
+				B5C63B9E270EBC0200D01D56 /* TwitterCell.swift in Sources */,
+				B5C63B94270EAAF800D01D56 /* AboutUsLogoView.swift in Sources */,
+				B5C63BA0270EBDD800D01D56 /* FacebookCell.swift in Sources */,
+				B52261BB27134EBA000300A7 /* DiabetesFuncCell.swift in Sources */,
+				B5C63BA2270EC2F100D01D56 /* MLHeaderview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

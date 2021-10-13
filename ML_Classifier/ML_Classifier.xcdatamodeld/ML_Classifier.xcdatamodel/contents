@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Person" representedClassName=".Person" syncable="YES">
+        <attribute name="bloodPressure" optional="YES" attributeType="String"/>
+        <attribute name="bmi" optional="YES" attributeType="String"/>
+        <attribute name="diabetesFunc" optional="YES" attributeType="String"/>
+        <attribute name="edad" optional="YES" attributeType="String"/>
+        <attribute name="glucose" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="insuline" optional="YES" attributeType="String"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="outcome" optional="YES" attributeType="String"/>
+        <attribute name="pregnancies" optional="YES" attributeType="String"/>
+        <attribute name="sexo" optional="YES" attributeType="String"/>
+        <attribute name="skinThickness" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Person" positionX="-54" positionY="-9" width="128" height="209"/>
+    </elements>
+</model>
