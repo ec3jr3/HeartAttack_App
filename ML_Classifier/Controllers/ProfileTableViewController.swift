@@ -177,18 +177,11 @@ class ProfileTableViewController: UITableViewController{
                 destinationController.person = self.informaciondeUsuario[indexPath.row]
             }
         }
-        else if segue.identifier == "dataToTest" {
-            if let indexPath = tableView.indexPathForSelectedRow {
-                let destinationController = segue.destination as! TestViewController
-                destinationController.personTest = self.informaciondeUsuario[indexPath.row]
-            }
-        }
     }
     
     @IBAction func unwindToHome(for unwindSegue: UIStoryboardSegue) {
         dismiss(animated: true, completion: nil)
     }
-    
     
 }
 

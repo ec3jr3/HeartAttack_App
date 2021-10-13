@@ -16,6 +16,7 @@
 		B52261B727134EA3000300A7 /* SkinThicknessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261B627134EA3000300A7 /* SkinThicknessCell.swift */; };
 		B52261B927134EAE000300A7 /* BMICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261B827134EAE000300A7 /* BMICell.swift */; };
 		B52261BB27134EBA000300A7 /* DiabetesFuncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261BA27134EBA000300A7 /* DiabetesFuncCell.swift */; };
+		B5478D1F2717636D00C17BE1 /* PersonDetailThreeColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5478D1E2717636D00C17BE1 /* PersonDetailThreeColumnCell.swift */; };
 		B56A504C2706418B0078E5D3 /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A504B2706418B0078E5D3 /* ProfileDetailViewController.swift */; };
 		B56A504E270648D50078E5D3 /* PersonDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A504D270648D50078E5D3 /* PersonDetailHeaderView.swift */; };
 		B56A5050270650B60078E5D3 /* PersonDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A504F270650B60078E5D3 /* PersonDetailTextCell.swift */; };
@@ -41,7 +42,6 @@
 		B5C63B9C270EB7F700D01D56 /* ContactUsLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B9B270EB7F700D01D56 /* ContactUsLinkCell.swift */; };
 		B5C63B9E270EBC0200D01D56 /* TwitterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B9D270EBC0200D01D56 /* TwitterCell.swift */; };
 		B5C63BA0270EBDD800D01D56 /* FacebookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B9F270EBDD800D01D56 /* FacebookCell.swift */; };
-		B5C63BA2270EC2F100D01D56 /* MLHeaderview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63BA1270EC2F100D01D56 /* MLHeaderview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +54,7 @@
 		B52261B627134EA3000300A7 /* SkinThicknessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinThicknessCell.swift; sourceTree = "<group>"; };
 		B52261B827134EAE000300A7 /* BMICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICell.swift; sourceTree = "<group>"; };
 		B52261BA27134EBA000300A7 /* DiabetesFuncCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabetesFuncCell.swift; sourceTree = "<group>"; };
+		B5478D1E2717636D00C17BE1 /* PersonDetailThreeColumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailThreeColumnCell.swift; sourceTree = "<group>"; };
 		B56A504B2706418B0078E5D3 /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
 		B56A504D270648D50078E5D3 /* PersonDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailHeaderView.swift; sourceTree = "<group>"; };
 		B56A504F270650B60078E5D3 /* PersonDetailTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailTextCell.swift; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 		B5C63B9B270EB7F700D01D56 /* ContactUsLinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsLinkCell.swift; sourceTree = "<group>"; };
 		B5C63B9D270EBC0200D01D56 /* TwitterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCell.swift; sourceTree = "<group>"; };
 		B5C63B9F270EBDD800D01D56 /* FacebookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookCell.swift; sourceTree = "<group>"; };
-		B5C63BA1270EC2F100D01D56 /* MLHeaderview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLHeaderview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +158,6 @@
 				B5C63B9B270EB7F700D01D56 /* ContactUsLinkCell.swift */,
 				B5C63B9D270EBC0200D01D56 /* TwitterCell.swift */,
 				B5C63B9F270EBDD800D01D56 /* FacebookCell.swift */,
-				B5C63BA1270EC2F100D01D56 /* MLHeaderview.swift */,
 				B52261AE27134B53000300A7 /* InsulineCell.swift */,
 				B52261B027134E76000300A7 /* PregnanciesCell.swift */,
 				B52261B227134E85000300A7 /* GlucoseCell.swift */,
@@ -166,6 +165,7 @@
 				B52261B627134EA3000300A7 /* SkinThicknessCell.swift */,
 				B52261B827134EAE000300A7 /* BMICell.swift */,
 				B52261BA27134EBA000300A7 /* DiabetesFuncCell.swift */,
+				B5478D1E2717636D00C17BE1 /* PersonDetailThreeColumnCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,6 +271,7 @@
 				B52261B727134EA3000300A7 /* SkinThicknessCell.swift in Sources */,
 				B52261B927134EAE000300A7 /* BMICell.swift in Sources */,
 				B50BB14D270FA0AA00CA81D5 /* SAButton.swift in Sources */,
+				B5478D1F2717636D00C17BE1 /* PersonDetailThreeColumnCell.swift in Sources */,
 				B52261B127134E76000300A7 /* PregnanciesCell.swift in Sources */,
 				B59863082703B925005078A4 /* PersonDiffableDataSource.swift in Sources */,
 				B59863022703A789005078A4 /* PersonTableViewCell.swift in Sources */,
@@ -298,7 +299,6 @@
 				B5C63B94270EAAF800D01D56 /* AboutUsLogoView.swift in Sources */,
 				B5C63BA0270EBDD800D01D56 /* FacebookCell.swift in Sources */,
 				B52261BB27134EBA000300A7 /* DiabetesFuncCell.swift in Sources */,
-				B5C63BA2270EC2F100D01D56 /* MLHeaderview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

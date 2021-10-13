@@ -22,9 +22,6 @@ class PersonTableViewCell: UITableViewCell {
     }
     @IBOutlet var favoriteImageView: UIImageView!
     
-    @IBAction func infoToTest(){
-        
-    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

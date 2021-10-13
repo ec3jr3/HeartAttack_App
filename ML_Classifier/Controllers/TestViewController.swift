@@ -11,8 +11,7 @@ class TestViewController: UIViewController {
     
     var personTest: ProfileInfo = ProfileInfo()
     
-    @IBOutlet var headerImageView: MLHeaderview!
-    
+    @IBOutlet var nameForTestL : UILabel!
     
 
     override func viewDidLoad() {
@@ -20,7 +19,9 @@ class TestViewController: UIViewController {
         
         navigationController?.navigationBar.prefersLargeTitles = true
         // Do any additional setup after loading the view.
-        headerImageView.ModelImageView.image = UIImage(named: "model")
+        
+        nameForTestL.text = personTest.name
+        
     }
     
     

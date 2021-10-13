@@ -50,7 +50,7 @@ class ProfileDetailViewController: UIViewController{
 extension ProfileDetailViewController: UITableViewDataSource, UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-        { return 2 }
+        { return 3 }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
@@ -71,8 +71,18 @@ extension ProfileDetailViewController: UITableViewDataSource, UITableViewDelegat
             cell.DiabetesFuncLabel.text = person.DiabetesPredigreeFunc
             cell.InsulineLabel.text = person.Insuline
                 return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PersonDetailThreeColumnCell.self), for: indexPath) as! PersonDetailThreeColumnCell
+            cell.Test.text = "Run Test"
+               return cell
         default:
             fatalError("Failed to instantiate the table view cell for detail view controller")
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "runTest" {
+                let destinationController = segue.destination as! TestViewController
+                destinationController.personTest = self.person
+            }
+        }
 }
