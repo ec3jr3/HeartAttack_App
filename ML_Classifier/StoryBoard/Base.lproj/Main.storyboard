@@ -102,19 +102,19 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fhB-VQ-OyD">
                                                     <rect key="frame" x="148" y="18.5" width="153.5" height="101.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name of the user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0a-oh-hMO">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of the user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0a-oh-hMO">
                                                             <rect key="frame" x="0.0" y="0.0" width="139" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unL-2s-BUo">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unL-2s-BUo">
                                                             <rect key="frame" x="0.0" y="40.5" width="30" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcN-YG-I9M">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcN-YG-I9M">
                                                             <rect key="frame" x="0.0" y="81" width="28" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -127,30 +127,29 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.shield.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2JP-Ig-OCN">
                                             <rect key="frame" x="373.5" y="11.5" width="20.5" height="34.5"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGv-sF-KNg">
-                                            <rect key="frame" x="341" y="72" width="45" height="31"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testtube.2" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sJx-SG-foQ">
+                                            <rect key="frame" x="364" y="72" width="30" height="30"/>
                                             <color key="tintColor" systemColor="systemGreenColor"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="testtube.2" catalog="system" title=""/>
-                                        </button>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="xGv-sF-KNg" secondAttribute="trailing" constant="8" id="14g-ZL-t8t"/>
                                         <constraint firstItem="2JP-Ig-OCN" firstAttribute="top" secondItem="BCN-PI-ziG" secondAttribute="topMargin" id="4wA-hc-VPh"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="xME-FA-r27" secondAttribute="bottom" constant="6" id="8oA-hX-rk2"/>
-                                        <constraint firstItem="xGv-sF-KNg" firstAttribute="leading" secondItem="xME-FA-r27" secondAttribute="trailing" constant="19.5" id="Q0L-Rw-58j"/>
+                                        <constraint firstItem="sJx-SG-foQ" firstAttribute="top" secondItem="2JP-Ig-OCN" secondAttribute="bottom" constant="25.5" id="CEB-Ta-ubJ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="sJx-SG-foQ" secondAttribute="bottom" constant="59.5" id="N5R-fD-fmO"/>
                                         <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="xME-FA-r27" secondAttribute="trailing" constant="87" id="Q5p-VG-Umq"/>
                                         <constraint firstItem="2JP-Ig-OCN" firstAttribute="trailing" secondItem="BCN-PI-ziG" secondAttribute="trailingMargin" id="QpS-qT-DRT"/>
+                                        <constraint firstItem="sJx-SG-foQ" firstAttribute="leading" secondItem="xME-FA-r27" secondAttribute="trailing" constant="42.5" id="U6T-Cc-j85"/>
                                         <constraint firstItem="xME-FA-r27" firstAttribute="leading" secondItem="BCN-PI-ziG" secondAttribute="leadingMargin" id="UmX-K2-3fn"/>
                                         <constraint firstItem="xME-FA-r27" firstAttribute="top" secondItem="BCN-PI-ziG" secondAttribute="topMargin" constant="7" id="bt1-pQ-rFG"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="2JP-Ig-OCN" secondAttribute="bottom" constant="115.5" id="e8M-1q-M5r"/>
-                                        <constraint firstItem="xGv-sF-KNg" firstAttribute="top" secondItem="2JP-Ig-OCN" secondAttribute="bottom" constant="25.5" id="ff0-oA-ZUC"/>
                                         <constraint firstItem="2JP-Ig-OCN" firstAttribute="leading" secondItem="xME-FA-r27" secondAttribute="trailing" constant="52" id="qK3-h1-17W"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="xGv-sF-KNg" secondAttribute="bottom" constant="59" id="vpJ-82-nz7"/>
+                                        <constraint firstItem="sJx-SG-foQ" firstAttribute="trailing" secondItem="BCN-PI-ziG" secondAttribute="trailingMargin" id="yDk-Jp-ktj"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="ProfilePicImage" destination="0jY-n1-gVx" id="fwn-nG-Uzz"/>
+                                    <outlet property="TestDone" destination="sJx-SG-foQ" id="hJV-Ji-aNo"/>
                                     <outlet property="ageLabel" destination="unL-2s-BUo" id="RTP-cR-fGB"/>
                                     <outlet property="favoriteImageView" destination="2JP-Ig-OCN" id="aLB-kF-OgY"/>
                                     <outlet property="nameLabel" destination="b0a-oh-hMO" id="8xI-i4-VOg"/>

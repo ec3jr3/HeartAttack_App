@@ -13,7 +13,7 @@ class ProfileTableViewController: UITableViewController{
     //var informaciondeUsuarios:[PersonIn] = []
     //var fetchResultController: NSFetchedResultsController<PersonIn>!
     var informaciondeUsuario:[ProfileInfo] = [
-        ProfileInfo(name: "Andres", edad: "21", sexo: "Male", image: "image1", pregnancies: "6", Glucose: "148", BloodPressure: "72", SkinThickness: "35", Insuline: "0", BMI: "33.6", DiabetesPredigreeFunc: "0.627", Outcome: false),
+        ProfileInfo(name: "Andres", edad: "21", sexo: "Male", image: "image1", pregnancies: "6", Glucose: "148", BloodPressure: "72", SkinThickness: "35", Insuline: "0", BMI: "33.6", DiabetesPredigreeFunc: "0.627", Outcome: false,DiabetesResult: "1"),
         ProfileInfo(name: "Holland", edad: "19", sexo: "Female", image: "image3", pregnancies: "0", Glucose: "82", BloodPressure: "64", SkinThickness: "24", Insuline: "0", BMI: "26.6", DiabetesPredigreeFunc: "0.321",Outcome: false),
         ProfileInfo(name: "Celine", edad: "20", sexo: "Female", image: "image2", pregnancies: "0", Glucose: "85", BloodPressure: "66", SkinThickness: "29", Insuline: "0", BMI: "26.6", DiabetesPredigreeFunc: "0.351", Outcome: false),
         ProfileInfo(name: "Daniel", edad: "22", sexo: "male", image: "image1", pregnancies: "0", Glucose: "87", BloodPressure: "66", SkinThickness: "29", Insuline: "0", BMI: "27.6", DiabetesPredigreeFunc: "0.351",Outcome: false),
@@ -32,6 +32,8 @@ class ProfileTableViewController: UITableViewController{
         
         //enable large navigation bar tiles
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+        //
         
         // Create a snapshot and populate the data
        //fetchRestaurantData()
@@ -92,7 +94,17 @@ class ProfileTableViewController: UITableViewController{
                 cell.sexLabel.text = informaciondeUsuarios.sexo
                 cell.ProfilePicImage.image = UIImage(named: informaciondeUsuarios.image)
                 cell.favoriteImageView.isHidden = informaciondeUsuarios.Outcome ? false : true
+                
+                //whenever the outcome is either "1" or "0" is going to show the image that the test was already done
+                if informaciondeUsuarios.DiabetesResult == "0"{
+                    cell.TestDone.isHidden = false
+                } else if informaciondeUsuarios.DiabetesResult == "1" {
+                    cell.TestDone.isHidden = false
+                }else if informaciondeUsuarios.DiabetesResult == "" {
+                    cell.TestDone.isHidden = true
+                }
     return cell }
+            
     )
         return dataSource
     }

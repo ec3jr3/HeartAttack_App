@@ -24,7 +24,7 @@ struct ProfileInfo: Hashable {
     
     var Outcome: Bool = false
     
-    //var DiabetesResult: Bool = false
+    var DiabetesResult: String = ""
 }
 /*import CoreData
 
