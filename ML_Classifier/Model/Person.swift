@@ -7,6 +7,7 @@
 
 
 struct ProfileInfo: Hashable {
+    //hello mundo
     var name: String = ""
     var edad: String = ""
     var sexo: String = ""
