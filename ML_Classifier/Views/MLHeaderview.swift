@@ -9,6 +9,8 @@ import UIKit
 
 class MLHeaderview: UIView {
     @IBOutlet var ModelImageView: UIImageView!
+    
+    @IBOutlet var namefortest: UILabel!
 
     /*
     // Only override draw() if you perform custom drawing.

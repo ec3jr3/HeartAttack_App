@@ -9,7 +9,11 @@ import UIKit
 
 class TestViewController: UIViewController {
     
+    var personTest: ProfileInfo = ProfileInfo()
+    
     @IBOutlet var headerImageView: MLHeaderview!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +22,7 @@ class TestViewController: UIViewController {
         // Do any additional setup after loading the view.
         headerImageView.ModelImageView.image = UIImage(named: "model")
     }
+    
     
 
     /*
