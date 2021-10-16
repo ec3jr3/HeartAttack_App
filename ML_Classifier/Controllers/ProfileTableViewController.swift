@@ -13,13 +13,8 @@ class ProfileTableViewController: UITableViewController{
     //var informaciondeUsuarios:[PersonIn] = []
     //var fetchResultController: NSFetchedResultsController<PersonIn>!
     var informaciondeUsuario:[ProfileInfo] = [
-        ProfileInfo(name: "Andres", edad: "21", sexo: "Male", image: "image1", pregnancies: "6", Glucose: "148", BloodPressure: "72", SkinThickness: "35", Insuline: "0", BMI: "33.6", DiabetesPredigreeFunc: "0.627", Outcome: false,DiabetesResult: "1"),
-        ProfileInfo(name: "Holland", edad: "19", sexo: "Female", image: "image3", pregnancies: "0", Glucose: "82", BloodPressure: "64", SkinThickness: "24", Insuline: "0", BMI: "26.6", DiabetesPredigreeFunc: "0.321",Outcome: false),
-        ProfileInfo(name: "Celine", edad: "20", sexo: "Female", image: "image2", pregnancies: "0", Glucose: "85", BloodPressure: "66", SkinThickness: "29", Insuline: "0", BMI: "26.6", DiabetesPredigreeFunc: "0.351", Outcome: false),
-        ProfileInfo(name: "Daniel", edad: "22", sexo: "male", image: "image1", pregnancies: "0", Glucose: "87", BloodPressure: "66", SkinThickness: "29", Insuline: "0", BMI: "27.6", DiabetesPredigreeFunc: "0.351",Outcome: false),
-        ProfileInfo(name: "Celine", edad: "23", sexo: "male", image: "image1", pregnancies: "0", Glucose: "84", BloodPressure: "66", SkinThickness: "29", Insuline: "0", BMI: "23.6", DiabetesPredigreeFunc: "0.351",Outcome: false),
-        ProfileInfo(name: "Celine", edad: "18", sexo: "male", image: "image1", pregnancies: "0", Glucose: "82", BloodPressure: "66", SkinThickness: "29", Insuline: "0", BMI: "24.6", DiabetesPredigreeFunc: "0.351",Outcome: false),
-        ProfileInfo(name: "Rj", edad: "17", sexo: "male", image: "image1", pregnancies: "0", Glucose: "81", BloodPressure: "66", SkinThickness: "29", Insuline: "0", BMI: "28.6", DiabetesPredigreeFunc: "0.351",Outcome: false)]
+        ProfileInfo(name: "andres", image: "image1", edad: "21", sexo: "male", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: true)]
+    
     @IBOutlet var emptyProfileView: UIView!
     
     lazy var dataSource = configureDataSource()

@@ -21,90 +21,138 @@ class PersonDetailTwoColumnCell: UITableViewCell {
         }
     }
     
-    @IBOutlet var BMITitle: UILabel!{
+    @IBOutlet var chest_pain_typeTitle: UILabel!{
         didSet{
-            BMITitle.text = BMITitle.text?.uppercased()
+            chest_pain_typeTitle.text = chest_pain_typeTitle.text?.uppercased()
             //BMITitle.numberOfLines = 0
         }
     }
-    @IBOutlet var BMILable: UILabel!{
+    @IBOutlet var chest_pain_typeLable: UILabel!{
         didSet{
             //BMILable.numberOfLines = 0
         }
     }
     
-    @IBOutlet var BloodPTitle: UILabel!{
+    @IBOutlet var bpTitle: UILabel!{
         didSet{
-            BloodPTitle.text = BloodPTitle.text?.uppercased()
+            bpTitle.text = bpTitle.text?.uppercased()
             //BloodPTitle.numberOfLines = 0
         }
     }
-    @IBOutlet var BloodPLabel: UILabel!{
+    @IBOutlet var bpLabel: UILabel!{
         didSet{
             //BloodPLabel.numberOfLines = 0
         }
     }
     
-    @IBOutlet var GlucoseTitle: UILabel!{
+    @IBOutlet var cholesterolTitle: UILabel!{
         didSet{
-            GlucoseTitle.text = GlucoseTitle.text?.uppercased()
+            cholesterolTitle.text = cholesterolTitle.text?.uppercased()
            // GlucoseTitle.numberOfLines = 0
         }
     }
-    @IBOutlet var GlucoseLabel: UILabel!{
+    @IBOutlet var cholesterolLabel: UILabel!{
         didSet{
             //GlucoseLabel.numberOfLines = 0
         }
     }
     
-    @IBOutlet var PregnanciesTitle: UILabel!{
+    @IBOutlet var fbs_over_120Title: UILabel!{
         didSet{
-            PregnanciesTitle.text = PregnanciesTitle.text?.uppercased()
+            fbs_over_120Title.text = fbs_over_120Title.text?.uppercased()
             //PregnanciesTitle.numberOfLines = 0
         }
     }
-    @IBOutlet var PregnanciesLabel: UILabel!{
+    @IBOutlet var fbs_over_120Label: UILabel!{
         didSet{
             //PregnanciesLabel.numberOfLines = 0
         }
     }
     
-    @IBOutlet var SkinThicTitle: UILabel!{
+    @IBOutlet var ekg_resultsTitle: UILabel!{
         didSet{
-            SkinThicTitle.text = SkinThicTitle.text?.uppercased()
+            ekg_resultsTitle.text = ekg_resultsTitle.text?.uppercased()
            // SkinThicTitle.numberOfLines = 0
         }
     }
-    @IBOutlet var SkinThicLabel: UILabel!{
+    @IBOutlet var ekg_resultsLabel: UILabel!{
         didSet{
             //SkinThicLabel.numberOfLines = 0
         }
     }
     
-    @IBOutlet var DiabetesFuncTitle: UILabel!{
+    @IBOutlet var max_hrTitle: UILabel!{
         didSet{
-            DiabetesFuncTitle.text = DiabetesFuncTitle.text?.uppercased()
+            max_hrTitle.text = max_hrTitle.text?.uppercased()
             //DiabetesFuncTitle.numberOfLines = 0
         }
     }
-    @IBOutlet var DiabetesFuncLabel: UILabel!{
+    @IBOutlet var max_hrLabel: UILabel!{
         didSet{
             //DiabetesFuncLabel.numberOfLines = 0
         }
     }
     
-    @IBOutlet var InsulineTitle: UILabel!{
+    @IBOutlet var exercise_anginaTitle: UILabel!{
         didSet{
-            InsulineTitle.text = InsulineTitle.text?.uppercased()
-            //InsulineTitle.numberOfLines = 0
+            exercise_anginaTitle.text = exercise_anginaTitle.text?.uppercased()
+            //exercise_anginaTitle.numberOfLines = 0
         }
     }
-    @IBOutlet var InsulineLabel: UILabel!{
+    @IBOutlet var exercise_anginaLabel: UILabel!{
         didSet{
-            //InsulineLabel.numberOfLines = 0
+            //exercise_anginaLabel.numberOfLines = 0
+        }
+    }
+    
+    @IBOutlet var st_depressionLTitle: UILabel!{
+        didSet{
+            st_depressionLTitle.text = st_depressionLTitle.text?.uppercased()
+            //st_depressionLTitle.numberOfLines = 0
+        }
+    }
+    @IBOutlet var st_depressionLLabel: UILabel!{
+        didSet{
+            //st_depressionLLabel.numberOfLines = 0
+        }
+    }
+    
+    @IBOutlet var slope_of_stTitle: UILabel!{
+        didSet{
+            slope_of_stTitle.text = slope_of_stTitle.text?.uppercased()
+            //exercise_anginaTitle.numberOfLines = 0
+        }
+    }
+    @IBOutlet var slope_of_stLabel: UILabel!{
+        didSet{
+            //slope_of_stLabel.numberOfLines = 0
+        }
+    }
+    
+    @IBOutlet var number_of_vessels_fluroTitle: UILabel!{
+        didSet{
+            number_of_vessels_fluroTitle.text = number_of_vessels_fluroTitle.text?.uppercased()
+            //number_of_vessels_fluroTitle.numberOfLines = 0
+        }
+    }
+    @IBOutlet var number_of_vessels_fluroLabel: UILabel!{
+        didSet{
+            //number_of_vessels_fluroLabel.numberOfLines = 0
         }
     }
 
+    @IBOutlet var thalliumTitle: UILabel!{
+        didSet{
+            thalliumTitle.text = thalliumTitle.text?.uppercased()
+            //thalliumTitle.numberOfLines = 0
+        }
+    }
+    @IBOutlet var thalliumLabel: UILabel!{
+        didSet{
+            //thalliumLabel.numberOfLines = 0
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
    

@@ -23,7 +23,7 @@ class AboutUsViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         //configuring header view
-        headerImageView.LogoImageView.image = UIImage(named: "logo")
+        headerImageView.LogoImageView.image = UIImage(named: "heartlogo")
         
     }
     /*@IBAction func emailButtonTapped(_ sender: SAButton) {
@@ -63,7 +63,7 @@ extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: DescriptionTextCell.self), for: indexPath) as! DescriptionTextCell
-            cell.descriptionLabel.text = "Esta aplicación busca facilitar el acceso de herramientas que ayuden a predecir diabetes, esto puede ayudar a tomar decisiones preliminares y servir como referencia a médicos"
+            cell.descriptionLabel.text = "Esta aplicación busca facilitar el acceso de herramientas que ayuden a predecir ataques al corazon, esto puede ayudar a tomar decisiones preliminares y servir como referencia a médicos"
             
             return cell
         case 1:

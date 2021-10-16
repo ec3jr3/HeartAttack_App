@@ -9,7 +9,12 @@ import UIKit
 
 class PersonDetailThreeColumnCell: UITableViewCell {
     
-    @IBOutlet var Test: UILabel!
+    @IBOutlet var Test: UILabel!{
+        didSet{
+            Test.layer.cornerRadius = 10
+            Test.clipsToBounds = true
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

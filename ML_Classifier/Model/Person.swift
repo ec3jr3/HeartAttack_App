@@ -9,21 +9,24 @@
 struct ProfileInfo: Hashable {
     //hello mundo
     var name: String = ""
-    var edad: String = ""
-    var sexo: String = ""
     var image: String = ""
+    var edad: String = ""
     
     //for the ml + edad variable
-    var pregnancies: String = ""
-    var Glucose: String = ""
-    var BloodPressure: String = ""
-    var SkinThickness: String = ""
-    var Insuline: String = ""
-    var BMI: String = ""
-    var DiabetesPredigreeFunc: String = ""
+    var sexo: String = ""
+    var chest_pain_type: String = ""
+    var bp: String = ""
+    var cholesterol: String = ""
+    var fbs_over_120: String = ""
+    var ekg_results : String = ""
+    var max_hr: String = ""
+    var exercise_angina: String = ""
+    var st_depressionL: String = ""
+    var slope_of_st: String = ""
+    var number_of_vessels_fluro: String = ""
+    var thallium: String = ""
     
     var Outcome: Bool = false
-    
     var DiabetesResult: String = ""
 }
 /*import CoreData

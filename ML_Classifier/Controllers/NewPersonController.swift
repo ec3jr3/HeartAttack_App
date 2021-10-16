@@ -13,6 +13,8 @@ class NewPersonController: UITableViewController {
     var personEdit: ProfileInfo = ProfileInfo()
     //var person: PersonIn!
     
+    
+    
     @IBOutlet var nameTextField: RoundedBorderTextField! {
         didSet {
             nameTextField.tag = 1
@@ -32,53 +34,74 @@ class NewPersonController: UITableViewController {
             sexTextField.delegate = self
         }
     }
-    @IBOutlet var preganTextField: RoundedBorderTextField! {
+    @IBOutlet var ChestPainTextField: RoundedBorderTextField! {
         didSet {
-            preganTextField.tag = 4
-            preganTextField.keyboardType = .asciiCapableNumberPad
-            preganTextField.delegate = self
+            ChestPainTextField.tag = 4
+            ChestPainTextField.keyboardType = .asciiCapableNumberPad
+            ChestPainTextField.delegate = self
         }
     }
-    @IBOutlet var glucoseTextField: RoundedBorderTextField! {
+    @IBOutlet var HeartRateTextField: RoundedBorderTextField! {
         didSet {
-            glucoseTextField.tag = 5
-            glucoseTextField.keyboardType = .asciiCapableNumberPad
-            glucoseTextField.delegate = self
+            HeartRateTextField.tag = 5
+            HeartRateTextField.keyboardType = .asciiCapableNumberPad
+            HeartRateTextField.delegate = self
         }
     }
-    @IBOutlet var bloodTextField: RoundedBorderTextField! {
+    @IBOutlet var RbloodPressureTextField: RoundedBorderTextField! {
         didSet {
-            bloodTextField.tag = 6
-            bloodTextField.keyboardType = .asciiCapableNumberPad
-            bloodTextField.delegate = self
+            RbloodPressureTextField.tag = 6
+            RbloodPressureTextField.keyboardType = .asciiCapableNumberPad
+            RbloodPressureTextField.delegate = self
         }
     }
-    @IBOutlet var skinthicTextField: RoundedBorderTextField! {
+    @IBOutlet var MajorVesselsTextField: RoundedBorderTextField! {
         didSet {
-            skinthicTextField.tag = 7
-            skinthicTextField.keyboardType = .asciiCapableNumberPad
-            skinthicTextField.delegate = self
+            MajorVesselsTextField.tag = 7
+            MajorVesselsTextField.keyboardType = .asciiCapableNumberPad
+            MajorVesselsTextField.delegate = self
         }
     }
-    @IBOutlet var InsulineTextField: RoundedBorderTextField! {
+    @IBOutlet var CholesterolTextField: RoundedBorderTextField! {
         didSet {
-            InsulineTextField.tag = 8
-            InsulineTextField.keyboardType = .asciiCapableNumberPad
-            InsulineTextField.delegate = self
+            CholesterolTextField.tag = 8
+            CholesterolTextField.keyboardType = .asciiCapableNumberPad
+            CholesterolTextField.delegate = self
         }
     }
-    @IBOutlet var BMITextField: RoundedBorderTextField! {
+    @IBOutlet var FastingBloodSugarTextField: RoundedBorderTextField! {
         didSet {
-            BMITextField.tag = 9
-            BMITextField.keyboardType = .asciiCapableNumberPad
-            BMITextField.delegate = self
+            FastingBloodSugarTextField.tag = 9
+            FastingBloodSugarTextField.keyboardType = .asciiCapableNumberPad
+            FastingBloodSugarTextField.delegate = self
         }
     }
-    @IBOutlet var FuncTextField: RoundedBorderTextField! {
+    @IBOutlet var ExerciseInducedTextField: RoundedBorderTextField! {
         didSet {
-            FuncTextField.tag = 10
-            FuncTextField.keyboardType = .asciiCapableNumberPad
-            FuncTextField.delegate = self
+            ExerciseInducedTextField.tag = 10
+            ExerciseInducedTextField.keyboardType = .asciiCapableNumberPad
+            ExerciseInducedTextField.delegate = self
+        }
+    }
+    @IBOutlet var TheSlopeofPeakExerciseTextField: RoundedBorderTextField! {
+        didSet {
+            TheSlopeofPeakExerciseTextField.tag = 11
+            TheSlopeofPeakExerciseTextField.keyboardType = .asciiCapableNumberPad
+            TheSlopeofPeakExerciseTextField.delegate = self
+        }
+    }
+    @IBOutlet var StDepressionTextField: RoundedBorderTextField! {
+        didSet {
+            StDepressionTextField.tag = 12
+            StDepressionTextField.keyboardType = .asciiCapableNumberPad
+            StDepressionTextField.delegate = self
+        }
+    }
+    @IBOutlet var RestinElectroCardiographicTextField: RoundedBorderTextField! {
+        didSet {
+            RestinElectroCardiographicTextField.tag = 13
+            RestinElectroCardiographicTextField.keyboardType = .asciiCapableNumberPad
+            RestinElectroCardiographicTextField.delegate = self
         }
     }
     @IBOutlet var photoImageView: UIImageView! {
@@ -133,7 +156,7 @@ class NewPersonController: UITableViewController {
     // MARK: - Button Actions
     
     @IBAction func saveButtonTapped(sender: UIButton) {
-        if nameTextField.text == "" || ageTextField.text == "" || sexTextField.text == "" || preganTextField.text == "" || glucoseTextField.text == "" || bloodTextField.text == "" || skinthicTextField.text == "" || InsulineTextField.text == "" || BMITextField.text == "" || FuncTextField.text == "" {
+        if nameTextField.text == "" || ageTextField.text == "" || sexTextField.text == "" || ChestPainTextField.text == "" || HeartRateTextField.text == "" || RbloodPressureTextField.text == "" || MajorVesselsTextField.text == "" || CholesterolTextField.text == "" || FastingBloodSugarTextField.text == "" || ExerciseInducedTextField.text == "" || TheSlopeofPeakExerciseTextField.text == "" || StDepressionTextField.text == "" || RestinElectroCardiographicTextField.text == "" {
             let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             alertController.addAction(alertAction)
@@ -143,14 +166,18 @@ class NewPersonController: UITableViewController {
         }
         
         print("Name: \(nameTextField.text ?? "")")
+        print("Age: \(ageTextField.text ?? "")")
         print("Sex: \(sexTextField.text ?? "")")
-        print("# OF Pregnancies: \(preganTextField.text ?? "")")
-        print("Glucose: \(glucoseTextField.text ?? "")")
-        print("Blood : \(bloodTextField.text ?? "")")
-        print("Skin Thickness: \(skinthicTextField.text ?? "")")
-        print("Insuline levels: \(InsulineTextField.text ?? "")")
-        print("BMI: \(BMITextField.text ?? "")")
-        print("Diabetes Func: \(FuncTextField.text ?? "")")
+        print("Name: \(ChestPainTextField.text ?? "")")
+        print("Name: \(HeartRateTextField.text ?? "")")
+        print("# OF Pregnancies: \(RbloodPressureTextField.text ?? "")")
+        print("Glucose: \(MajorVesselsTextField.text ?? "")")
+        print("Blood : \(CholesterolTextField.text ?? "")")
+        print("Skin Thickness: \(FastingBloodSugarTextField.text ?? "")")
+        print("Insuline levels: \(ExerciseInducedTextField.text ?? "")")
+        print("BMI: \(TheSlopeofPeakExerciseTextField.text ?? "")")
+        print("Diabetes Func: \(StDepressionTextField.text ?? "")")
+        print("Diabetes Func: \(RestinElectroCardiographicTextField.text ?? "")")
         
         /*if let appDelegate = (UIApplication.shared.delegate as? AppDelegate){
             person = PersonIn(context: appDelegate.persistentContainer.viewContext)

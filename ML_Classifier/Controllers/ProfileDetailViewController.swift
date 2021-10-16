@@ -55,26 +55,30 @@ extension ProfileDetailViewController: UITableViewDataSource, UITableViewDelegat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PersonDetailThreeColumnCell.self), for: indexPath) as! PersonDetailThreeColumnCell
+            cell.Test.text = "Run Test"
+               return cell
+        case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing:PersonDetailTextCell.self), for: indexPath) as! PersonDetailTextCell
             cell.edadLabel.text = person.edad
             //cell.descriptionLabel.text = restaurant.description
             return cell
-        case 1:
+        case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PersonDetailTwoColumnCell.self), for: indexPath) as! PersonDetailTwoColumnCell
             //cell.column1TitleLabel.text = "Address"
             cell.SexLabel.text = person.sexo
-            cell.BMILable.text = person.BMI
-            cell.BloodPLabel.text = person.BloodPressure
-            cell.GlucoseLabel.text = person.Glucose
-            cell.PregnanciesLabel.text = person.pregnancies
-            cell.SkinThicLabel.text = person.SkinThickness
-            cell.DiabetesFuncLabel.text = person.DiabetesPredigreeFunc
-            cell.InsulineLabel.text = person.Insuline
+            cell.chest_pain_typeLable.text = person.chest_pain_type
+            cell.bpLabel.text = person.bp
+            cell.cholesterolLabel.text = person.cholesterol
+            cell.fbs_over_120Label.text = person.fbs_over_120
+            cell.ekg_resultsLabel.text = person.ekg_results
+            cell.max_hrLabel.text = person.max_hr
+            cell.exercise_anginaLabel.text = person.exercise_angina
+            cell.st_depressionLLabel.text = person.st_depressionL
+            cell.slope_of_stLabel.text = person.slope_of_st
+            cell.number_of_vessels_fluroLabel.text = person.number_of_vessels_fluro
+            cell.thalliumLabel.text = person.thallium
                 return cell
-        case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PersonDetailThreeColumnCell.self), for: indexPath) as! PersonDetailThreeColumnCell
-            cell.Test.text = "Run Test"
-               return cell
         default:
             fatalError("Failed to instantiate the table view cell for detail view controller")
         }
