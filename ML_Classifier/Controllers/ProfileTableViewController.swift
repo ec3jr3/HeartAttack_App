@@ -13,7 +13,9 @@ class ProfileTableViewController: UITableViewController{
     //var informaciondeUsuarios:[PersonIn] = []
     //var fetchResultController: NSFetchedResultsController<PersonIn>!
     var informaciondeUsuario:[ProfileInfo] = [
-        ProfileInfo(name: "andres", image: "image1", edad: "21", sexo: "male", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: true)]
+        ProfileInfo(name: "Andres", image: "image1", edad: "21", sexo: "male", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: true),
+        ProfileInfo(name: "Holland", image: "image3", edad: "21", sexo: "male", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: true),
+        ProfileInfo(name: "Eliezer", image: "image1", edad: "21", sexo: "male", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: true)]
     
     @IBOutlet var emptyProfileView: UIView!
     
@@ -36,6 +38,7 @@ class ProfileTableViewController: UITableViewController{
         var snapshot = NSDiffableDataSourceSnapshot<Section, ProfileInfo>()
         snapshot.appendSections([.all])
         snapshot.appendItems(informaciondeUsuario, toSection: .all)
+        
         dataSource.apply(snapshot, animatingDifferences: false)
         
         tableView.cellLayoutMarginsFollowReadableWidth = true
