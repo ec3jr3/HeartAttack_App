@@ -1,18 +1,18 @@
 //
-//  DiabetesFuncCell.swift
+//  FastinBSCell.swift
 //  ML_Classifier
 //
-//  Created by Andres Castellanos on 10/10/21.
+//  Created by Andres Castellanos on 10/16/21.
 //
 
 import UIKit
 
-class DiabetesFuncCell: UITableViewCell {
+class FastinBSCell: UITableViewCell {
     
-    @IBOutlet var DiabetesFuncLabel: UILabel!
-    @IBOutlet var DiabetesFuncDescriptionLabel: UILabel! {
+    @IBOutlet var FastinBloodSLabel: UILabel!
+    @IBOutlet var FastinBloodSDescriptionLabel: UILabel! {
         didSet {
-            DiabetesFuncDescriptionLabel.numberOfLines = 0
+            FastinBloodSDescriptionLabel.numberOfLines = 0
         }
     }
 

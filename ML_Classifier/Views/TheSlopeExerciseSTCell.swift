@@ -1,18 +1,18 @@
 //
-//  BMICell.swift
+//  TheSlopeExerciseSTCell.swift
 //  ML_Classifier
 //
-//  Created by Andres Castellanos on 10/10/21.
+//  Created by Andres Castellanos on 10/16/21.
 //
 
 import UIKit
 
-class BMICell: UITableViewCell {
+class TheSlopeExerciseSTCell: UITableViewCell {
     
-    @IBOutlet var BMILabel: UILabel!
-    @IBOutlet var BMIDescriptionLabel : UILabel! {
+    @IBOutlet var TheSlopeExerciseSTLabel: UILabel!
+    @IBOutlet var TheSlopeExerciseSTDescriptionLabel: UILabel! {
         didSet {
-            BMIDescriptionLabel.numberOfLines = 0
+            TheSlopeExerciseSTDescriptionLabel.numberOfLines = 0
         }
     }
 

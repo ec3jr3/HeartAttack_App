@@ -1,18 +1,18 @@
 //
-//  InsulineCell.swift
+//  ThalliumCell.swift
 //  ML_Classifier
 //
-//  Created by Andres Castellanos on 10/10/21.
+//  Created by Andres Castellanos on 10/16/21.
 //
 
 import UIKit
 
-class InsulineCell: UITableViewCell {
+class ThalliumCell: UITableViewCell {
     
-    @IBOutlet var insulineLabel: UILabel!
-    @IBOutlet var insulineDescriptionLabel: UILabel!{
-        didSet{
-            insulineDescriptionLabel.numberOfLines = 0
+    @IBOutlet var ThalliumLabel: UILabel!
+    @IBOutlet var ThalliumDescriptionLabel: UILabel! {
+        didSet {
+            ThalliumDescriptionLabel.numberOfLines = 0
         }
     }
 

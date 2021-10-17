@@ -18,6 +18,8 @@ class AboutUsViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .singleLine
+        tableView.separatorColor = .systemYellow
         
         //enable large navigation bar tiles
         navigationController?.navigationBar.prefersLargeTitles = true

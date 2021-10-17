@@ -1,18 +1,18 @@
 //
-//  SkinThicknessCell.swift
+//  STDepressionCell.swift
 //  ML_Classifier
 //
-//  Created by Andres Castellanos on 10/10/21.
+//  Created by Andres Castellanos on 10/16/21.
 //
 
 import UIKit
 
-class SkinThicknessCell: UITableViewCell {
+class STDepressionCell: UITableViewCell {
     
-    @IBOutlet var SkinThicknessLabel: UILabel!
-    @IBOutlet var SkinThicknessDescriptionLabel: UILabel! {
+    @IBOutlet var STDepressionLabel: UILabel!
+    @IBOutlet var STDepressionDescriptionLabel: UILabel! {
         didSet {
-            SkinThicknessDescriptionLabel.numberOfLines = 0
+            STDepressionDescriptionLabel.numberOfLines = 0
         }
     }
 

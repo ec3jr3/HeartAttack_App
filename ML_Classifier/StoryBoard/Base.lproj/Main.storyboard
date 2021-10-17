@@ -102,19 +102,19 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fhB-VQ-OyD">
                                                     <rect key="frame" x="148" y="18.5" width="153.5" height="101.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of the user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0a-oh-hMO">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name of the user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0a-oh-hMO">
                                                             <rect key="frame" x="0.0" y="0.0" width="139" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unL-2s-BUo">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unL-2s-BUo">
                                                             <rect key="frame" x="0.0" y="40.5" width="30" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcN-YG-I9M">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcN-YG-I9M">
                                                             <rect key="frame" x="0.0" y="81" width="28" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -682,54 +682,51 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InsulineCell" rowHeight="70" id="gO7-GN-pXR" customClass="InsulineCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ThalliumCell" rowHeight="70" id="KFt-so-D2f" customClass="ThalliumCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gO7-GN-pXR" id="jGL-ed-VkM">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KFt-so-D2f" id="Cog-a4-CmZ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insulin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8n-AA-3Ow">
-                                                    <rect key="frame" x="20" y="11" width="54" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Thallium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lv0-Zo-lCM">
+                                                    <rect key="frame" x="20" y="11" width="70" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SU8-wf-EwG">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLy-No-alW">
                                                     <rect key="frame" x="20" y="35" width="374" height="20.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20.5" id="WEv-wQ-iIQ"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="SU8-wf-EwG" firstAttribute="top" secondItem="f8n-AA-3Ow" secondAttribute="bottom" constant="3.5" id="4gY-03-98t"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="f8n-AA-3Ow" secondAttribute="trailing" id="Fau-he-ptc"/>
-                                                <constraint firstItem="f8n-AA-3Ow" firstAttribute="top" secondItem="jGL-ed-VkM" secondAttribute="topMargin" id="SH3-FG-vBV"/>
-                                                <constraint firstItem="SU8-wf-EwG" firstAttribute="top" secondItem="f8n-AA-3Ow" secondAttribute="bottom" constant="3.5" id="TAI-tY-BQC"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="SU8-wf-EwG" secondAttribute="trailing" id="bG3-Yo-onf"/>
-                                                <constraint firstItem="f8n-AA-3Ow" firstAttribute="leading" secondItem="jGL-ed-VkM" secondAttribute="leadingMargin" id="gvo-2J-t67"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="SU8-wf-EwG" secondAttribute="bottom" constant="3.5" id="heu-EF-Eh5"/>
-                                                <constraint firstItem="SU8-wf-EwG" firstAttribute="leading" secondItem="jGL-ed-VkM" secondAttribute="leadingMargin" id="ogR-Nc-4da"/>
+                                                <constraint firstItem="gLy-No-alW" firstAttribute="trailing" secondItem="Cog-a4-CmZ" secondAttribute="trailingMargin" id="B5o-vt-NWt"/>
+                                                <constraint firstItem="gLy-No-alW" firstAttribute="leading" secondItem="Cog-a4-CmZ" secondAttribute="leadingMargin" id="GkS-EN-TUZ"/>
+                                                <constraint firstItem="gLy-No-alW" firstAttribute="top" secondItem="Lv0-Zo-lCM" secondAttribute="bottom" constant="3.5" id="I57-IY-VVQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="gLy-No-alW" secondAttribute="bottom" constant="3.5" id="JNk-Ke-MRw"/>
+                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="Lv0-Zo-lCM" secondAttribute="trailing" constant="308" id="TvR-nt-kQ2"/>
+                                                <constraint firstItem="Lv0-Zo-lCM" firstAttribute="top" secondItem="Cog-a4-CmZ" secondAttribute="topMargin" id="b9C-eK-0R8"/>
+                                                <constraint firstItem="gLy-No-alW" firstAttribute="top" secondItem="Lv0-Zo-lCM" secondAttribute="bottom" constant="3.5" id="sA3-Od-6uF"/>
+                                                <constraint firstItem="Lv0-Zo-lCM" firstAttribute="leading" secondItem="Cog-a4-CmZ" secondAttribute="leadingMargin" id="xWt-cM-3rS"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="insulineDescriptionLabel" destination="SU8-wf-EwG" id="bXH-qw-RXF"/>
-                                            <outlet property="insulineLabel" destination="f8n-AA-3Ow" id="fZP-jD-oMo"/>
+                                            <outlet property="ThalliumDescriptionLabel" destination="gLy-No-alW" id="vmv-KJ-iNF"/>
+                                            <outlet property="ThalliumLabel" destination="Lv0-Zo-lCM" id="cuu-OP-vuD"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PregnanciesCell" rowHeight="70" id="Q82-AK-MuQ" customClass="PregnanciesCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CholesterolCell" rowHeight="70" id="Q82-AK-MuQ" customClass="CholesterolCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="114.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q82-AK-MuQ" id="1Ai-hj-NbD">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregnancies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHo-hi-26s">
-                                                    <rect key="frame" x="20" y="11" width="101.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cholesterol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHo-hi-26s">
+                                                    <rect key="frame" x="20" y="11" width="94" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -756,24 +753,24 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="PregnancieDescriptionLabel" destination="kjI-rO-MNb" id="Na6-Qk-fgs"/>
-                                            <outlet property="PregnancieLabel" destination="qHo-hi-26s" id="QPw-Ar-7CQ"/>
+                                            <outlet property="CholesterolDescriptionLabel" destination="kjI-rO-MNb" id="wAN-ls-L9d"/>
+                                            <outlet property="CholesterolLabel" destination="qHo-hi-26s" id="Lfd-zN-CsP"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GlucoseCell" rowHeight="70" id="n3p-Sv-KVq" customClass="GlucoseCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChestPainTypeCell" rowHeight="70" id="n3p-Sv-KVq" customClass="ChestPainTypeCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="184.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n3p-Sv-KVq" id="JqB-Ls-j3k">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glucose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbH-3z-tN8">
-                                                    <rect key="frame" x="20" y="11" width="66" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Chest Pain Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbH-3z-tN8">
+                                                    <rect key="frame" x="20" y="11" width="131.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bM-vl-bXS">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bM-vl-bXS">
                                                     <rect key="frame" x="20" y="35" width="374" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -787,24 +784,24 @@
                                                 <constraint firstItem="QbH-3z-tN8" firstAttribute="leading" secondItem="JqB-Ls-j3k" secondAttribute="leadingMargin" id="AwG-Dz-d05"/>
                                                 <constraint firstItem="QbH-3z-tN8" firstAttribute="top" secondItem="JqB-Ls-j3k" secondAttribute="topMargin" id="KiH-Uc-cos"/>
                                                 <constraint firstItem="6bM-vl-bXS" firstAttribute="top" secondItem="QbH-3z-tN8" secondAttribute="bottom" constant="3.5" id="R8Q-yT-EpE"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="QbH-3z-tN8" secondAttribute="trailing" constant="308" id="r4T-s6-iLk"/>
+                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="QbH-3z-tN8" secondAttribute="trailing" constant="308" id="r4T-s6-iLk"/>
                                                 <constraint firstItem="6bM-vl-bXS" firstAttribute="trailing" secondItem="JqB-Ls-j3k" secondAttribute="trailingMargin" id="uN0-F2-jMc"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="GlucoseDescriptionLabel" destination="6bM-vl-bXS" id="Br9-i8-atJ"/>
-                                            <outlet property="GlucoseLabel" destination="QbH-3z-tN8" id="Ua9-Lm-CdZ"/>
+                                            <outlet property="ChestPainTypeDescriptionLabel" destination="6bM-vl-bXS" id="QG6-fd-5nw"/>
+                                            <outlet property="ChestPainTypeLabel" destination="QbH-3z-tN8" id="h1O-JG-2GK"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BloodPressureCell" rowHeight="70" id="D76-Jc-MWK" customClass="BloodPressureCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MaximumHeartRateCell" rowHeight="70" id="D76-Jc-MWK" customClass="MaximumHeartRateCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="254.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D76-Jc-MWK" id="vfH-PL-o9d">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nF7-Lz-ffM">
-                                                    <rect key="frame" x="20" y="11" width="123.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum Heart Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nF7-Lz-ffM">
+                                                    <rect key="frame" x="20" y="11" width="171" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -831,102 +828,96 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="BloodPressureDescriptionLabel" destination="Dgz-0I-RBJ" id="Edl-5h-f1f"/>
-                                            <outlet property="BloodPressureLabel" destination="nF7-Lz-ffM" id="fsy-vV-VHD"/>
+                                            <outlet property="MaximumHeartRateDescriptionLabel" destination="Dgz-0I-RBJ" id="QQL-A5-hdP"/>
+                                            <outlet property="MaximumHeartRateLabel" destination="nF7-Lz-ffM" id="E4i-0I-MYz"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SkinThicknessCell" rowHeight="70" id="nXF-kJ-4s3" customClass="SkinThicknessCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FastinBSCell" rowHeight="70" id="0xj-Om-r4u" customClass="FastinBSCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="324.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nXF-kJ-4s3" id="2DM-If-A0M">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0xj-Om-r4u" id="LWk-92-V6n">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skin Thickness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ry-pU-x6q">
-                                                    <rect key="frame" x="20" y="11" width="123" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Fasting Blood Sugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjw-HG-IME">
+                                                    <rect key="frame" x="20" y="11" width="163" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xn-Os-sp3">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yrr-pq-swe">
                                                     <rect key="frame" x="20" y="35" width="374" height="20.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20.5" id="bgj-QO-Kti"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="8ry-pU-x6q" firstAttribute="leading" secondItem="2DM-If-A0M" secondAttribute="leadingMargin" id="Jcw-Rz-DjS"/>
-                                                <constraint firstItem="8ry-pU-x6q" firstAttribute="top" secondItem="2DM-If-A0M" secondAttribute="topMargin" id="QlE-H0-USN"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="8ry-pU-x6q" secondAttribute="trailing" id="SSt-Ka-pmA"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="7xn-Os-sp3" secondAttribute="trailing" id="TgA-CC-27d"/>
-                                                <constraint firstItem="7xn-Os-sp3" firstAttribute="leading" secondItem="2DM-If-A0M" secondAttribute="leadingMargin" id="V6F-wI-jih"/>
-                                                <constraint firstItem="7xn-Os-sp3" firstAttribute="top" secondItem="8ry-pU-x6q" secondAttribute="bottom" constant="3.5" id="dZO-sH-RlZ"/>
-                                                <constraint firstItem="7xn-Os-sp3" firstAttribute="top" secondItem="8ry-pU-x6q" secondAttribute="bottom" constant="3.5" id="nBR-U6-1FB"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="7xn-Os-sp3" secondAttribute="bottom" constant="3.5" id="vXS-kw-OA6"/>
+                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="Hjw-HG-IME" secondAttribute="trailing" constant="308" id="FvL-gW-lGx"/>
+                                                <constraint firstItem="Hjw-HG-IME" firstAttribute="top" secondItem="LWk-92-V6n" secondAttribute="topMargin" id="IJX-vj-Kvu"/>
+                                                <constraint firstItem="Yrr-pq-swe" firstAttribute="trailing" secondItem="LWk-92-V6n" secondAttribute="trailingMargin" id="JNW-NF-tqe"/>
+                                                <constraint firstItem="Yrr-pq-swe" firstAttribute="top" secondItem="Hjw-HG-IME" secondAttribute="bottom" constant="3.5" id="N7X-KO-ewZ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Yrr-pq-swe" secondAttribute="bottom" constant="3.5" id="cRu-ny-zhO"/>
+                                                <constraint firstItem="Yrr-pq-swe" firstAttribute="leading" secondItem="LWk-92-V6n" secondAttribute="leadingMargin" id="naH-5H-a7S"/>
+                                                <constraint firstItem="Yrr-pq-swe" firstAttribute="top" secondItem="Hjw-HG-IME" secondAttribute="bottom" constant="3.5" id="ngi-QV-FTE"/>
+                                                <constraint firstItem="Hjw-HG-IME" firstAttribute="leading" secondItem="LWk-92-V6n" secondAttribute="leadingMargin" id="w84-YX-Gg7"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="SkinThicknessDescriptionLabel" destination="7xn-Os-sp3" id="EyZ-ho-rpH"/>
-                                            <outlet property="SkinThicknessLabel" destination="8ry-pU-x6q" id="JO8-t0-gnO"/>
+                                            <outlet property="FastinBloodSDescriptionLabel" destination="Yrr-pq-swe" id="4dA-pQ-4oE"/>
+                                            <outlet property="FastinBloodSLabel" destination="Hjw-HG-IME" id="Utb-Bg-0gx"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BMICell" rowHeight="70" id="Yva-1M-B5N" customClass="BMICell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestingBloodPressureCell" rowHeight="70" id="KPd-89-XKF" customClass="RestingBloodPressureCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="394.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yva-1M-B5N" id="ulb-QE-bvQ">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KPd-89-XKF" id="svd-Ob-eXF">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLj-9q-gRI">
-                                                    <rect key="frame" x="20" y="11" width="31.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Resting Blood Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZK-zV-R1a">
+                                                    <rect key="frame" x="20" y="11" width="190" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLH-cU-Gbl">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPO-4K-YeT">
                                                     <rect key="frame" x="20" y="35" width="374" height="20.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20.5" id="u6y-KV-8Og"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="BLH-cU-Gbl" firstAttribute="leading" secondItem="ulb-QE-bvQ" secondAttribute="leadingMargin" id="2go-c4-ids"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="CLj-9q-gRI" secondAttribute="trailing" id="OMb-oc-eF0"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="BLH-cU-Gbl" secondAttribute="bottom" constant="3.5" id="Rj8-CV-qDa"/>
-                                                <constraint firstItem="BLH-cU-Gbl" firstAttribute="top" secondItem="CLj-9q-gRI" secondAttribute="bottom" constant="3.5" id="ZKk-8B-LdP"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="BLH-cU-Gbl" secondAttribute="trailing" id="gMu-eZ-koU"/>
-                                                <constraint firstItem="CLj-9q-gRI" firstAttribute="top" secondItem="ulb-QE-bvQ" secondAttribute="topMargin" id="h6Z-jR-Xyv"/>
-                                                <constraint firstItem="BLH-cU-Gbl" firstAttribute="top" secondItem="CLj-9q-gRI" secondAttribute="bottom" constant="3.5" id="nEl-fC-83p"/>
-                                                <constraint firstItem="CLj-9q-gRI" firstAttribute="leading" secondItem="ulb-QE-bvQ" secondAttribute="leadingMargin" id="vU7-Tr-MiC"/>
+                                                <constraint firstItem="FPO-4K-YeT" firstAttribute="top" secondItem="GZK-zV-R1a" secondAttribute="bottom" constant="3.5" id="2j7-ro-CWc"/>
+                                                <constraint firstItem="FPO-4K-YeT" firstAttribute="trailing" secondItem="svd-Ob-eXF" secondAttribute="trailingMargin" id="Tuo-XC-4CO"/>
+                                                <constraint firstItem="FPO-4K-YeT" firstAttribute="leading" secondItem="svd-Ob-eXF" secondAttribute="leadingMargin" id="YLu-aY-KCE"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="FPO-4K-YeT" secondAttribute="bottom" constant="3.5" id="bGg-Jd-99j"/>
+                                                <constraint firstItem="GZK-zV-R1a" firstAttribute="top" secondItem="svd-Ob-eXF" secondAttribute="topMargin" id="dyo-B0-pZI"/>
+                                                <constraint firstItem="GZK-zV-R1a" firstAttribute="leading" secondItem="svd-Ob-eXF" secondAttribute="leadingMargin" id="nhC-jR-qzf"/>
+                                                <constraint firstItem="FPO-4K-YeT" firstAttribute="top" secondItem="GZK-zV-R1a" secondAttribute="bottom" constant="3.5" id="oWx-Gn-Gqm"/>
+                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="GZK-zV-R1a" secondAttribute="trailing" constant="308" id="uT3-Ln-WsI"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="BMIDescriptionLabel" destination="BLH-cU-Gbl" id="BAY-N5-sly"/>
-                                            <outlet property="BMILabel" destination="CLj-9q-gRI" id="ST0-sc-F6N"/>
+                                            <outlet property="RestingBloodPressureDescriptionLabel" destination="FPO-4K-YeT" id="T3m-Ug-RUk"/>
+                                            <outlet property="RestingBloodPressureLabel" destination="GZK-zV-R1a" id="hQS-di-WqL"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DiabetesFuncCell" rowHeight="70" id="fHk-va-NiZ" customClass="DiabetesFuncCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NumberVesselsCell" rowHeight="70" id="fHk-va-NiZ" customClass="NumberVesselsCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="464.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fHk-va-NiZ" id="moh-b9-9df">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diabetes Pedigree Function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3c-aN-S72">
-                                                    <rect key="frame" x="20" y="11" width="224" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Number of Major Vessels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3c-aN-S72">
+                                                    <rect key="frame" x="20" y="11" width="224" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kka-tG-v1R">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kka-tG-v1R">
                                                     <rect key="frame" x="20" y="35" width="374" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -945,8 +936,152 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="DiabetesFuncDescriptionLabel" destination="kka-tG-v1R" id="NAi-XJ-Qs3"/>
-                                            <outlet property="DiabetesFuncLabel" destination="t3c-aN-S72" id="OCh-Am-VdR"/>
+                                            <outlet property="NumberOfMayorVesselsDescriptionLabel" destination="kka-tG-v1R" id="BKx-dQ-Khb"/>
+                                            <outlet property="NumberOfMayorVesselsLabel" destination="t3c-aN-S72" id="Mqc-d6-NXG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ExerciseInducedAnginaCell" rowHeight="70" id="9g2-sC-iVC" customClass="ExerciseInducedAnginaCell" customModule="ML_Classifier" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="534.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9g2-sC-iVC" id="mWL-l5-A0R">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Exercise induced Angina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLi-J3-wem">
+                                                    <rect key="frame" x="20" y="11" width="224" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NX-zW-QCx">
+                                                    <rect key="frame" x="20" y="35" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rLi-J3-wem" firstAttribute="top" secondItem="mWL-l5-A0R" secondAttribute="topMargin" id="EUB-D4-oma"/>
+                                                <constraint firstItem="rLi-J3-wem" firstAttribute="leading" secondItem="mWL-l5-A0R" secondAttribute="leadingMargin" id="Uua-TL-Day"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rLi-J3-wem" secondAttribute="trailing" constant="150" id="dgW-S3-2th"/>
+                                                <constraint firstItem="5NX-zW-QCx" firstAttribute="top" secondItem="rLi-J3-wem" secondAttribute="bottom" constant="3.5" id="fAU-MT-krM"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5NX-zW-QCx" secondAttribute="bottom" constant="3.5" id="lC9-x7-HOR"/>
+                                                <constraint firstItem="5NX-zW-QCx" firstAttribute="leading" secondItem="mWL-l5-A0R" secondAttribute="leadingMargin" id="lbb-EV-PTp"/>
+                                                <constraint firstItem="5NX-zW-QCx" firstAttribute="trailing" secondItem="mWL-l5-A0R" secondAttribute="trailingMargin" id="qZQ-qG-Ojp"/>
+                                                <constraint firstItem="5NX-zW-QCx" firstAttribute="top" secondItem="rLi-J3-wem" secondAttribute="bottom" constant="3.5" id="uiK-s4-AIF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ExerciseInducedAnginaDescriptionLabel" destination="5NX-zW-QCx" id="7LJ-ub-tvZ"/>
+                                            <outlet property="ExerciseInducedAnginaLabel" destination="rLi-J3-wem" id="xVw-lC-JFn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TheSlopeExerciseSTCell" rowHeight="70" id="Ymq-vf-FJW" customClass="TheSlopeExerciseSTCell" customModule="ML_Classifier" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="604.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ymq-vf-FJW" id="70Q-L3-vFS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The slope of The Peak exeercise ST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReU-AM-sBU">
+                                                    <rect key="frame" x="20" y="11" width="286" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1at-oN-p6u">
+                                                    <rect key="frame" x="20" y="35" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1at-oN-p6u" firstAttribute="leading" secondItem="70Q-L3-vFS" secondAttribute="leadingMargin" id="61D-Qf-HgS"/>
+                                                <constraint firstItem="1at-oN-p6u" firstAttribute="top" secondItem="ReU-AM-sBU" secondAttribute="bottom" constant="3.5" id="9op-Tt-iUm"/>
+                                                <constraint firstItem="1at-oN-p6u" firstAttribute="trailing" secondItem="70Q-L3-vFS" secondAttribute="trailingMargin" id="JMZ-dP-eGg"/>
+                                                <constraint firstItem="ReU-AM-sBU" firstAttribute="top" secondItem="70Q-L3-vFS" secondAttribute="topMargin" id="UZj-T5-CVy"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="1at-oN-p6u" secondAttribute="bottom" constant="3.5" id="bhi-qQ-TiS"/>
+                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="ReU-AM-sBU" secondAttribute="trailing" constant="150" id="gRc-5O-VEk"/>
+                                                <constraint firstItem="ReU-AM-sBU" firstAttribute="leading" secondItem="70Q-L3-vFS" secondAttribute="leadingMargin" id="lpS-tJ-Ul6"/>
+                                                <constraint firstItem="1at-oN-p6u" firstAttribute="top" secondItem="ReU-AM-sBU" secondAttribute="bottom" constant="3.5" id="sfu-8T-ylR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="TheSlopeExerciseSTDescriptionLabel" destination="1at-oN-p6u" id="BkT-2h-ASx"/>
+                                            <outlet property="TheSlopeExerciseSTLabel" destination="ReU-AM-sBU" id="rnS-SO-gNH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="STDepressionCell" rowHeight="70" id="f66-pT-jSJ" customClass="STDepressionCell" customModule="ML_Classifier" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="674.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f66-pT-jSJ" id="vo8-Qp-onI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ST Depression induced by exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRV-oq-pIm">
+                                                    <rect key="frame" x="20" y="11" width="283.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og6-PJ-oOl">
+                                                    <rect key="frame" x="20" y="35" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="og6-PJ-oOl" firstAttribute="top" secondItem="iRV-oq-pIm" secondAttribute="bottom" constant="3.5" id="49h-9j-9tK"/>
+                                                <constraint firstItem="og6-PJ-oOl" firstAttribute="leading" secondItem="vo8-Qp-onI" secondAttribute="leadingMargin" id="G0I-mc-Et4"/>
+                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="iRV-oq-pIm" secondAttribute="trailing" constant="150" id="PS5-Rd-QDO"/>
+                                                <constraint firstItem="iRV-oq-pIm" firstAttribute="leading" secondItem="vo8-Qp-onI" secondAttribute="leadingMargin" id="UaB-NG-xUT"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="og6-PJ-oOl" secondAttribute="bottom" constant="3.5" id="fi3-UR-RCZ"/>
+                                                <constraint firstItem="iRV-oq-pIm" firstAttribute="top" secondItem="vo8-Qp-onI" secondAttribute="topMargin" id="wBV-ab-0hT"/>
+                                                <constraint firstItem="og6-PJ-oOl" firstAttribute="top" secondItem="iRV-oq-pIm" secondAttribute="bottom" constant="3.5" id="ylQ-UM-pih"/>
+                                                <constraint firstItem="og6-PJ-oOl" firstAttribute="trailing" secondItem="vo8-Qp-onI" secondAttribute="trailingMargin" id="zAT-Mo-kxy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="STDepressionDescriptionLabel" destination="og6-PJ-oOl" id="Kx2-lf-hrl"/>
+                                            <outlet property="STDepressionLabel" destination="iRV-oq-pIm" id="h4s-LN-gv5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestingElectroCell" rowHeight="70" id="Jtj-Vq-S84" customClass="RestingElectroCell" customModule="ML_Classifier" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="744.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jtj-Vq-S84" id="2yt-5t-s07">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Resting Electrocardiographic Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bE2-5m-mkg">
+                                                    <rect key="frame" x="20" y="11" width="301" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zX0-TU-JL6">
+                                                    <rect key="frame" x="20" y="35" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bE2-5m-mkg" firstAttribute="top" secondItem="2yt-5t-s07" secondAttribute="topMargin" id="Rxg-XX-PfG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="zX0-TU-JL6" secondAttribute="bottom" constant="3.5" id="Uqq-cE-UX2"/>
+                                                <constraint firstItem="zX0-TU-JL6" firstAttribute="top" secondItem="bE2-5m-mkg" secondAttribute="bottom" constant="3.5" id="V7s-gq-udH"/>
+                                                <constraint firstItem="zX0-TU-JL6" firstAttribute="top" secondItem="bE2-5m-mkg" secondAttribute="bottom" constant="3.5" id="hxv-co-gAy"/>
+                                                <constraint firstItem="zX0-TU-JL6" firstAttribute="leading" secondItem="2yt-5t-s07" secondAttribute="leadingMargin" id="iIC-vk-zSd"/>
+                                                <constraint firstItem="bE2-5m-mkg" firstAttribute="leading" secondItem="2yt-5t-s07" secondAttribute="leadingMargin" id="iaR-1b-sP5"/>
+                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="bE2-5m-mkg" secondAttribute="trailing" constant="150" id="oBL-uV-FV2"/>
+                                                <constraint firstItem="zX0-TU-JL6" firstAttribute="trailing" secondItem="2yt-5t-s07" secondAttribute="trailingMargin" id="vWJ-i2-GC3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="RestingElectroDescriptionLabel" destination="zX0-TU-JL6" id="UfG-ud-OgF"/>
+                                            <outlet property="RestingElectroLabel" destination="bE2-5m-mkg" id="dCI-Pv-tPm"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -969,7 +1104,7 @@
             <objects>
                 <tableViewController id="05z-Yj-o0O" customClass="NewPersonController" customModule="ML_Classifier" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="tiO-yp-IjD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="2810"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -1449,7 +1584,7 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
-                    <size key="freeformSize" width="414" height="2810"/>
+                    <size key="freeformSize" width="414" height="2000"/>
                     <connections>
                         <outlet property="ageTextField" destination="msz-0v-vh5" id="tBb-ed-fWe"/>
                         <outlet property="nameTextField" destination="z3r-o9-Cpc" id="R7n-xg-bYK"/>

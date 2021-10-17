@@ -24,6 +24,7 @@ class ProfileTableViewController: UITableViewController{
         
         tableView.dataSource = dataSource
         tableView.separatorStyle = .singleLine
+        tableView.separatorColor = .systemYellow
         
         //enable large navigation bar tiles
         navigationController?.navigationBar.prefersLargeTitles = true

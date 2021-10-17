@@ -1,18 +1,18 @@
 //
-//  PregnanciesCell.swift
+//  ChestPainTypeCell.swift
 //  ML_Classifier
 //
-//  Created by Andres Castellanos on 10/10/21.
+//  Created by Andres Castellanos on 10/16/21.
 //
 
 import UIKit
 
-class PregnanciesCell: UITableViewCell {
+class ChestPainTypeCell: UITableViewCell {
     
-    @IBOutlet var PregnancieLabel: UILabel!
-    @IBOutlet var PregnancieDescriptionLabel: UILabel! {
-        didSet{
-            PregnancieDescriptionLabel.numberOfLines = 0
+    @IBOutlet var ChestPainTypeLabel: UILabel!
+    @IBOutlet var ChestPainTypeDescriptionLabel: UILabel! {
+        didSet {
+            ChestPainTypeDescriptionLabel.numberOfLines = 0
         }
     }
 

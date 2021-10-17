@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50B3166271BC9680019B3B4 /* ThalliumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B3165271BC9680019B3B4 /* ThalliumCell.swift */; };
+		B50B3168271BC9940019B3B4 /* CholesterolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B3167271BC9940019B3B4 /* CholesterolCell.swift */; };
+		B50B316B271BC9D70019B3B4 /* FastinBSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B316A271BC9D70019B3B4 /* FastinBSCell.swift */; };
+		B50B316D271BCA130019B3B4 /* ChestPainTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B316C271BCA130019B3B4 /* ChestPainTypeCell.swift */; };
+		B50B316F271BCA4E0019B3B4 /* MaximumHeartRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B316E271BCA4E0019B3B4 /* MaximumHeartRateCell.swift */; };
+		B50B3171271BCA850019B3B4 /* RestingBloodPressureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B3170271BCA850019B3B4 /* RestingBloodPressureCell.swift */; };
+		B50B3174271BCAF40019B3B4 /* NumberVesselsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B3173271BCAF40019B3B4 /* NumberVesselsCell.swift */; };
+		B50B3176271BCB370019B3B4 /* ExerciseInducedAnginaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B3175271BCB370019B3B4 /* ExerciseInducedAnginaCell.swift */; };
+		B50B3178271BCB700019B3B4 /* TheSlopeExerciseSTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B3177271BCB700019B3B4 /* TheSlopeExerciseSTCell.swift */; };
+		B50B317A271BCBAB0019B3B4 /* STDepressionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B3179271BCBAB0019B3B4 /* STDepressionCell.swift */; };
+		B50B317C271BCBE80019B3B4 /* RestingElectroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B317B271BCBE80019B3B4 /* RestingElectroCell.swift */; };
 		B50BB14D270FA0AA00CA81D5 /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB14C270FA0A900CA81D5 /* SAButton.swift */; };
 		B52261AD27125E7C000300A7 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261AC27125E7C000300A7 /* InformationViewController.swift */; };
-		B52261AF27134B53000300A7 /* InsulineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261AE27134B53000300A7 /* InsulineCell.swift */; };
-		B52261B127134E76000300A7 /* PregnanciesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261B027134E76000300A7 /* PregnanciesCell.swift */; };
-		B52261B327134E85000300A7 /* GlucoseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261B227134E85000300A7 /* GlucoseCell.swift */; };
-		B52261B527134E95000300A7 /* BloodPressureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261B427134E95000300A7 /* BloodPressureCell.swift */; };
-		B52261B727134EA3000300A7 /* SkinThicknessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261B627134EA3000300A7 /* SkinThicknessCell.swift */; };
-		B52261B927134EAE000300A7 /* BMICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261B827134EAE000300A7 /* BMICell.swift */; };
-		B52261BB27134EBA000300A7 /* DiabetesFuncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261BA27134EBA000300A7 /* DiabetesFuncCell.swift */; };
 		B5478D1F2717636D00C17BE1 /* PersonDetailThreeColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5478D1E2717636D00C17BE1 /* PersonDetailThreeColumnCell.swift */; };
 		B56A504C2706418B0078E5D3 /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A504B2706418B0078E5D3 /* ProfileDetailViewController.swift */; };
 		B56A504E270648D50078E5D3 /* PersonDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A504D270648D50078E5D3 /* PersonDetailHeaderView.swift */; };
@@ -45,15 +49,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B50B3165271BC9680019B3B4 /* ThalliumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThalliumCell.swift; sourceTree = "<group>"; };
+		B50B3167271BC9940019B3B4 /* CholesterolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CholesterolCell.swift; sourceTree = "<group>"; };
+		B50B316A271BC9D70019B3B4 /* FastinBSCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastinBSCell.swift; sourceTree = "<group>"; };
+		B50B316C271BCA130019B3B4 /* ChestPainTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestPainTypeCell.swift; sourceTree = "<group>"; };
+		B50B316E271BCA4E0019B3B4 /* MaximumHeartRateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumHeartRateCell.swift; sourceTree = "<group>"; };
+		B50B3170271BCA850019B3B4 /* RestingBloodPressureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestingBloodPressureCell.swift; sourceTree = "<group>"; };
+		B50B3173271BCAF40019B3B4 /* NumberVesselsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVesselsCell.swift; sourceTree = "<group>"; };
+		B50B3175271BCB370019B3B4 /* ExerciseInducedAnginaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInducedAnginaCell.swift; sourceTree = "<group>"; };
+		B50B3177271BCB700019B3B4 /* TheSlopeExerciseSTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSlopeExerciseSTCell.swift; sourceTree = "<group>"; };
+		B50B3179271BCBAB0019B3B4 /* STDepressionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STDepressionCell.swift; sourceTree = "<group>"; };
+		B50B317B271BCBE80019B3B4 /* RestingElectroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestingElectroCell.swift; sourceTree = "<group>"; };
 		B50BB14C270FA0A900CA81D5 /* SAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
 		B52261AC27125E7C000300A7 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
-		B52261AE27134B53000300A7 /* InsulineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulineCell.swift; sourceTree = "<group>"; };
-		B52261B027134E76000300A7 /* PregnanciesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnanciesCell.swift; sourceTree = "<group>"; };
-		B52261B227134E85000300A7 /* GlucoseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlucoseCell.swift; sourceTree = "<group>"; };
-		B52261B427134E95000300A7 /* BloodPressureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureCell.swift; sourceTree = "<group>"; };
-		B52261B627134EA3000300A7 /* SkinThicknessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinThicknessCell.swift; sourceTree = "<group>"; };
-		B52261B827134EAE000300A7 /* BMICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICell.swift; sourceTree = "<group>"; };
-		B52261BA27134EBA000300A7 /* DiabetesFuncCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabetesFuncCell.swift; sourceTree = "<group>"; };
 		B5478D1E2717636D00C17BE1 /* PersonDetailThreeColumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailThreeColumnCell.swift; sourceTree = "<group>"; };
 		B56A504B2706418B0078E5D3 /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
 		B56A504D270648D50078E5D3 /* PersonDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailHeaderView.swift; sourceTree = "<group>"; };
@@ -159,13 +167,17 @@
 				B5C63B9B270EB7F700D01D56 /* ContactUsLinkCell.swift */,
 				B5C63B9D270EBC0200D01D56 /* TwitterCell.swift */,
 				B5C63B9F270EBDD800D01D56 /* FacebookCell.swift */,
-				B52261AE27134B53000300A7 /* InsulineCell.swift */,
-				B52261B027134E76000300A7 /* PregnanciesCell.swift */,
-				B52261B227134E85000300A7 /* GlucoseCell.swift */,
-				B52261B427134E95000300A7 /* BloodPressureCell.swift */,
-				B52261B627134EA3000300A7 /* SkinThicknessCell.swift */,
-				B52261B827134EAE000300A7 /* BMICell.swift */,
-				B52261BA27134EBA000300A7 /* DiabetesFuncCell.swift */,
+				B50B3165271BC9680019B3B4 /* ThalliumCell.swift */,
+				B50B3167271BC9940019B3B4 /* CholesterolCell.swift */,
+				B50B316A271BC9D70019B3B4 /* FastinBSCell.swift */,
+				B50B316C271BCA130019B3B4 /* ChestPainTypeCell.swift */,
+				B50B316E271BCA4E0019B3B4 /* MaximumHeartRateCell.swift */,
+				B50B3170271BCA850019B3B4 /* RestingBloodPressureCell.swift */,
+				B50B3173271BCAF40019B3B4 /* NumberVesselsCell.swift */,
+				B50B3175271BCB370019B3B4 /* ExerciseInducedAnginaCell.swift */,
+				B50B3177271BCB700019B3B4 /* TheSlopeExerciseSTCell.swift */,
+				B50B3179271BCBAB0019B3B4 /* STDepressionCell.swift */,
+				B50B317B271BCBE80019B3B4 /* RestingElectroCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,38 +279,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50B3174271BCAF40019B3B4 /* NumberVesselsCell.swift in Sources */,
+				B50B317C271BCBE80019B3B4 /* RestingElectroCell.swift in Sources */,
 				B56A5050270650B60078E5D3 /* PersonDetailTextCell.swift in Sources */,
-				B52261B727134EA3000300A7 /* SkinThicknessCell.swift in Sources */,
-				B52261B927134EAE000300A7 /* BMICell.swift in Sources */,
 				B50BB14D270FA0AA00CA81D5 /* SAButton.swift in Sources */,
+				B50B317A271BCBAB0019B3B4 /* STDepressionCell.swift in Sources */,
 				B5478D1F2717636D00C17BE1 /* PersonDetailThreeColumnCell.swift in Sources */,
-				B52261B127134E76000300A7 /* PregnanciesCell.swift in Sources */,
 				B59863082703B925005078A4 /* PersonDiffableDataSource.swift in Sources */,
 				B59863022703A789005078A4 /* PersonTableViewCell.swift in Sources */,
+				B50B316F271BCA4E0019B3B4 /* MaximumHeartRateCell.swift in Sources */,
 				B59863002703A774005078A4 /* TestViewController.swift in Sources */,
 				B5C63B98270EB21300D01D56 /* VersionColumnCell.swift in Sources */,
-				B52261AF27134B53000300A7 /* InsulineCell.swift in Sources */,
+				B50B3166271BC9680019B3B4 /* ThalliumCell.swift in Sources */,
+				B50B3171271BCA850019B3B4 /* RestingBloodPressureCell.swift in Sources */,
 				B56A504E270648D50078E5D3 /* PersonDetailHeaderView.swift in Sources */,
+				B50B316D271BCA130019B3B4 /* ChestPainTypeCell.swift in Sources */,
 				B5C63B9A270EB52900D01D56 /* ConnectWithUsCell.swift in Sources */,
+				B50B3178271BCB700019B3B4 /* TheSlopeExerciseSTCell.swift in Sources */,
 				B56A505527066E5E0078E5D3 /* NavigationController.swift in Sources */,
 				B5C63B9C270EB7F700D01D56 /* ContactUsLinkCell.swift in Sources */,
 				B56A50522706577D0078E5D3 /* PersonDetailTwoColumnCell.swift in Sources */,
 				B5C63B96270EB14C00D01D56 /* DescriptionTextCell.swift in Sources */,
-				B52261B327134E85000300A7 /* GlucoseCell.swift in Sources */,
 				B59862E42703A5C2005078A4 /* AppDelegate.swift in Sources */,
+				B50B316B271BC9D70019B3B4 /* FastinBSCell.swift in Sources */,
 				B59FAB572707BAA600D46B89 /* NewPersonController.swift in Sources */,
 				B56A504C2706418B0078E5D3 /* ProfileDetailViewController.swift in Sources */,
 				B5C63B92270EA99600D01D56 /* AboutUsViewController.swift in Sources */,
 				B59862FE2703A743005078A4 /* ProfileTableViewController.swift in Sources */,
-				B52261B527134E95000300A7 /* BloodPressureCell.swift in Sources */,
 				B59863062703B574005078A4 /* Person.swift in Sources */,
 				B59FAB542707B97700D46B89 /* RoundedTextField.swift in Sources */,
 				B52261AD27125E7C000300A7 /* InformationViewController.swift in Sources */,
 				B59862E62703A5C2005078A4 /* SceneDelegate.swift in Sources */,
+				B50B3168271BC9940019B3B4 /* CholesterolCell.swift in Sources */,
 				B5C63B9E270EBC0200D01D56 /* TwitterCell.swift in Sources */,
 				B5C63B94270EAAF800D01D56 /* AboutUsLogoView.swift in Sources */,
 				B5C63BA0270EBDD800D01D56 /* FacebookCell.swift in Sources */,
-				B52261BB27134EBA000300A7 /* DiabetesFuncCell.swift in Sources */,
+				B50B3176271BCB370019B3B4 /* ExerciseInducedAnginaCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

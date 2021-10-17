@@ -1,18 +1,18 @@
 //
-//  BloodPressureCell.swift
+//  ExerciseInducedAnginaCell.swift
 //  ML_Classifier
 //
-//  Created by Andres Castellanos on 10/10/21.
+//  Created by Andres Castellanos on 10/16/21.
 //
 
 import UIKit
 
-class BloodPressureCell: UITableViewCell {
+class ExerciseInducedAnginaCell: UITableViewCell {
     
-    @IBOutlet var BloodPressureLabel : UILabel!
-    @IBOutlet var BloodPressureDescriptionLabel : UILabel! {
+    @IBOutlet var ExerciseInducedAnginaLabel: UILabel!
+    @IBOutlet var ExerciseInducedAnginaDescriptionLabel: UILabel! {
         didSet {
-            BloodPressureDescriptionLabel.numberOfLines = 0
+            ExerciseInducedAnginaDescriptionLabel.numberOfLines = 0
         }
     }
 

@@ -31,6 +31,7 @@ class ProfileDetailViewController: UIViewController{
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .singleLine
+        tableView.separatorColor = .systemYellow
         
     }
     override func viewWillAppear(_ animated: Bool) {

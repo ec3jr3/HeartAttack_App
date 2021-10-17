@@ -1,18 +1,18 @@
 //
-//  GlucoseCell.swift
+//  RestingElectroCell.swift
 //  ML_Classifier
 //
-//  Created by Andres Castellanos on 10/10/21.
+//  Created by Andres Castellanos on 10/16/21.
 //
 
 import UIKit
 
-class GlucoseCell: UITableViewCell {
+class RestingElectroCell: UITableViewCell {
     
-    @IBOutlet var GlucoseLabel :UILabel!
-    @IBOutlet var GlucoseDescriptionLabel :UILabel! {
+    @IBOutlet var RestingElectroLabel: UILabel!
+    @IBOutlet var RestingElectroDescriptionLabel: UILabel! {
         didSet {
-            GlucoseDescriptionLabel.numberOfLines = 0
+            RestingElectroDescriptionLabel.numberOfLines = 0
         }
     }
 
