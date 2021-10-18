@@ -18,6 +18,8 @@
 		B50B3178271BCB700019B3B4 /* TheSlopeExerciseSTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B3177271BCB700019B3B4 /* TheSlopeExerciseSTCell.swift */; };
 		B50B317A271BCBAB0019B3B4 /* STDepressionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B3179271BCBAB0019B3B4 /* STDepressionCell.swift */; };
 		B50B317C271BCBE80019B3B4 /* RestingElectroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B317B271BCBE80019B3B4 /* RestingElectroCell.swift */; };
+		B50B317F271DEF680019B3B4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50B317E271DEF680019B3B4 /* MapKit.framework */; };
+		B50B3185271DF3860019B3B4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B3184271DF3860019B3B4 /* MapViewController.swift */; };
 		B50BB14D270FA0AA00CA81D5 /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB14C270FA0A900CA81D5 /* SAButton.swift */; };
 		B52261AD27125E7C000300A7 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52261AC27125E7C000300A7 /* InformationViewController.swift */; };
 		B5478D1F2717636D00C17BE1 /* PersonDetailThreeColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5478D1E2717636D00C17BE1 /* PersonDetailThreeColumnCell.swift */; };
@@ -60,6 +62,8 @@
 		B50B3177271BCB700019B3B4 /* TheSlopeExerciseSTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSlopeExerciseSTCell.swift; sourceTree = "<group>"; };
 		B50B3179271BCBAB0019B3B4 /* STDepressionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STDepressionCell.swift; sourceTree = "<group>"; };
 		B50B317B271BCBE80019B3B4 /* RestingElectroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestingElectroCell.swift; sourceTree = "<group>"; };
+		B50B317E271DEF680019B3B4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B50B3184271DF3860019B3B4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B50BB14C270FA0A900CA81D5 /* SAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
 		B52261AC27125E7C000300A7 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		B5478D1E2717636D00C17BE1 /* PersonDetailThreeColumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailThreeColumnCell.swift; sourceTree = "<group>"; };
@@ -98,18 +102,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50B317F271DEF680019B3B4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B50B317D271DEF680019B3B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B50B317E271DEF680019B3B4 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B59862D72703A5C1005078A4 = {
 			isa = PBXGroup;
 			children = (
 				B59862E22703A5C2005078A4 /* ML_Classifier */,
 				B59862E12703A5C2005078A4 /* Products */,
 				B5BBF76627151F060008BE32 /* ML_Classifier copy-Info.plist */,
+				B50B317D271DEF680019B3B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +161,7 @@
 				B59FAB562707BAA600D46B89 /* NewPersonController.swift */,
 				B5C63B91270EA99600D01D56 /* AboutUsViewController.swift */,
 				B52261AC27125E7C000300A7 /* InformationViewController.swift */,
+				B50B3184271DF3860019B3B4 /* MapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -306,6 +321,7 @@
 				B56A504C2706418B0078E5D3 /* ProfileDetailViewController.swift in Sources */,
 				B5C63B92270EA99600D01D56 /* AboutUsViewController.swift in Sources */,
 				B59862FE2703A743005078A4 /* ProfileTableViewController.swift in Sources */,
+				B50B3185271DF3860019B3B4 /* MapViewController.swift in Sources */,
 				B59863062703B574005078A4 /* Person.swift in Sources */,
 				B59FAB542707B97700D46B89 /* RoundedTextField.swift in Sources */,
 				B52261AD27125E7C000300A7 /* InformationViewController.swift in Sources */,
@@ -465,6 +481,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ML_Classifier/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "You need to grant the app access to your camera in order to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You need to grant the app access to yout photo library so you can pick your favorite photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -492,6 +510,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ML_Classifier/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "You need to grant the app access to your camera in order to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You need to grant the app access to yout photo library so you can pick your favorite photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

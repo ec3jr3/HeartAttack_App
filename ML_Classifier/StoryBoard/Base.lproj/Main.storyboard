@@ -57,8 +57,22 @@
                         <viewLayoutGuide key="safeArea" id="grX-Cu-a8b"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ML" id="Bhc-oA-dHE"/>
+                    <navigationItem key="navigationItem" title="ML" id="Bhc-oA-dHE">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Had-zy-gn1">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="O7R-wV-X3U">
+                                <rect key="frame" x="344" y="5" width="50" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="map" catalog="system"/>
+                                <connections>
+                                    <segue destination="WrU-WZ-KTA" kind="show" id="ZI8-DF-vks"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="mapButton" destination="O7R-wV-X3U" id="HEj-uJ-nMx"/>
                         <outlet property="nameForTestL" destination="UWi-k0-PC9" id="COF-qC-oLy"/>
                     </connections>
                 </viewController>
@@ -1594,7 +1608,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMj-xs-j6v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="U83-CW-v7F" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3632" y="-1260"/>
+            <point key="canvasLocation" x="4542.0289855072469" y="-1260.2678571428571"/>
         </scene>
         <!--Profile-->
         <scene sceneID="jFF-h5-ovt">
@@ -1876,6 +1890,36 @@
             </objects>
             <point key="canvasLocation" x="937.68115942028987" y="-588.61607142857144"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="bDe-5a-lhO">
+            <objects>
+                <viewController id="oZp-z2-YfI" customClass="MapViewController" customModule="ML_Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qsw-S2-ht3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GLF-Qi-Otx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WBd-iY-iHT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GLF-Qi-Otx" firstAttribute="leading" secondItem="WBd-iY-iHT" secondAttribute="leading" id="Ore-Ng-PVE"/>
+                            <constraint firstItem="GLF-Qi-Otx" firstAttribute="top" secondItem="Qsw-S2-ht3" secondAttribute="top" id="go9-MH-Lxj"/>
+                            <constraint firstItem="GLF-Qi-Otx" firstAttribute="trailing" secondItem="WBd-iY-iHT" secondAttribute="trailing" id="ldh-r0-NSF"/>
+                            <constraint firstAttribute="bottom" secondItem="GLF-Qi-Otx" secondAttribute="bottom" id="wFD-ql-RET"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Owb-9T-PDE"/>
+                    <connections>
+                        <outlet property="mapView" destination="GLF-Qi-Otx" id="cZe-fb-z9h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8uY-eh-AkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2739.130434782609" y="-1312.5"/>
+        </scene>
         <!--New Person-->
         <scene sceneID="02f-Qg-s8l">
             <objects>
@@ -1892,7 +1936,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozy-aq-lRs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2719" y="-817"/>
+            <point key="canvasLocation" x="3628.985507246377" y="-817.63392857142856"/>
         </scene>
         <!--About Us-->
         <scene sceneID="ICg-eQ-sxs">
@@ -1913,6 +1957,25 @@
             </objects>
             <point key="canvasLocation" x="844.92753623188412" y="823.66071428571422"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jNf-wb-SFd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WrU-WZ-KTA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="sHU-lV-7IA"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nyg-WH-LJn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oZp-z2-YfI" kind="relationship" relationship="rootViewController" id="fPK-gV-Wlj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCg-WH-sRE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828.985507246377" y="-1312.5"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="eyJ-gy-EaH"/>
@@ -1923,6 +1986,7 @@
         <image name="emptydata" width="1440" height="1024"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="facebook" width="48" height="48"/>
+        <image name="map" catalog="system" width="128" height="110"/>
         <image name="newphoto" width="1840" height="1380"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>

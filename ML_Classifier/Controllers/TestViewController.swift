@@ -13,14 +13,26 @@ class TestViewController: UIViewController {
     
     @IBOutlet var nameForTestL : UILabel!
     
+    @IBOutlet var mapButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.prefersLargeTitles = true
-        // Do any additional setup after loading the view.
+        navigationController?.navigationBar.prefersLargeTitles = false
         
+        //get the user information
         nameForTestL.text = personTest.name
+        
+        //If the person got the results from the test a botton will apear to show the map for
+        //nearest hospitals
+        if personTest.DiabetesResult == "0" || personTest.DiabetesResult == "1"{
+            mapButton.imageView?.isHidden = false
+            mapButton.isEnabled = true
+        } else if personTest.DiabetesResult == "" {
+            mapButton.imageView?.isHidden = true //we hide the button if the person doesnt have results
+            mapButton.isEnabled = false //disabling the button if the person doesnt have results
+        }
         
     }
     
