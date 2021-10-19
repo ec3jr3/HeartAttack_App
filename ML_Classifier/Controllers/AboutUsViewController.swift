@@ -9,6 +9,8 @@ import UIKit
 import MessageUI
 
 class AboutUsViewController: UIViewController {
+    
+    var personEdit: ProfileInfo = ProfileInfo()
 
     @IBOutlet var headerImageView: AboutUsLogoView!
     @IBOutlet var tableView: UITableView!
@@ -19,7 +21,7 @@ class AboutUsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .singleLine
-        tableView.separatorColor = .systemYellow
+        tableView.separatorColor = .systemBackground
         
         //enable large navigation bar tiles
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -28,13 +30,12 @@ class AboutUsViewController: UIViewController {
         headerImageView.LogoImageView.image = UIImage(named: "heartlogo")
         
     }
-    /*@IBAction func emailButtonTapped(_ sender: SAButton) {
-       showEmailComposer()
     
+    @IBAction func emailButtonTapped(_ sender: UIButton){
+        showMailComposer()
     }
     
-    func showEmailComposer() {
-        
+    func showMailComposer() {
         guard MFMailComposeViewController.canSendMail() else {
             //show alert informing the user
             return
@@ -42,23 +43,44 @@ class AboutUsViewController: UIViewController {
         
         let composer = MFMailComposeViewController()
         composer.mailComposeDelegate = self
-        composer.setToRecipients(["1150159@alumno.um.edu.mx"])
-        composer.setSubject("Help!")
+        composer.setToRecipients(["eacc9999@outlook.com"])
+        composer.setSubject("HELP!")
         composer.setMessageBody("I love the app", isHTML: false)
+        
         present(composer, animated: true)
     }
-    */
 }
 
-/*extension AboutUsViewController: MFMailComposeViewControllerDelegate{
-    
-}*/
+extension AboutUsViewController: MFMailComposeViewControllerDelegate {
+   
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        
+        if let _ = error {
+            //show error alert
+            controller.dismiss(animated: true)
+            return
+        }
+        
+        switch result {
+        case .cancelled:
+            print("Cancelled")
+        case .saved:
+            print("Sved")
+        case .sent:
+            print("Email Sent")
+        case .failed:
+            print("Failed to send")
+        }
+        
+        controller.dismiss(animated: true)
+    }
+}
 
 extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -78,16 +100,11 @@ extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
             cell.ConnectWithUs.text = "Connect with us"
             return cell
         case 3:
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ContactUsLinkCell.self), for: indexPath) as! ContactUsLinkCell
-            cell.ContactUsLink.text = "Contact Us"
-            cell.EmailImageView.image = UIImage(systemName: "envelope.fill")
-            return cell
-        case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TwitterCell.self), for: indexPath) as! TwitterCell
             cell.TwitterLabel.text = "Follow us on Twitter"
             cell.TwiterLogoImageView.image = UIImage(named: "twitter")
             return cell
-        case 5:
+        case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FacebookCell.self), for: indexPath) as! FacebookCell
             cell.FacebookLabel.text = "Like on Facebook"
             cell.FacebookLogoImageView.image = UIImage(named: "facebook")
@@ -115,19 +132,6 @@ extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ConnectWithUsCell.self), for: indexPath) as! ConnectWithUsCell
             cell.isUserInteractionEnabled = false
         case 3:
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ContactUsLinkCell.self), for: indexPath) as! ContactUsLinkCell
-            cell.isUserInteractionEnabled = true
-            
-            
-            //give the varible "urlToOpen" a link
-            if let urlToOpen = URL(string: "https://mail.google.com"){
-                //open the url
-                UIApplication.shared.open(urlToOpen, options: [:]) { (done) in
-                    print("Link was opened successfully")
-                }
-            }
-            
-        case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TwitterCell.self), for: indexPath) as! TwitterCell
             cell.isUserInteractionEnabled = true
             if let urlToOpen = URL(string: "https://twitter.com"){
@@ -135,7 +139,7 @@ extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
                     print("Link was opened successfully")
                 }
             }
-        case 5:
+        case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FacebookCell.self), for: indexPath) as! FacebookCell
             cell.isUserInteractionEnabled = true
             if let urlToOpen = URL(string: "https://www.facebook.com") {

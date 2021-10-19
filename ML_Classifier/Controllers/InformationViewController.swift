@@ -19,7 +19,7 @@ class InformationViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .singleLine
-        tableView.separatorColor = .systemYellow
+        //tableView.separatorColor = .systemYellow
     }
 }
 extension InformationViewController: UITableViewDataSource, UITableViewDelegate

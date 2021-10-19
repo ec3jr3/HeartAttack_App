@@ -218,11 +218,11 @@
             <objects>
                 <viewController id="csj-ol-BpY" customClass="ProfileDetailViewController" customModule="ML_Classifier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Baz-Vs-bIp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Qke-tA-kaQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="eZ9-3M-nKi" userLabel="Header View" customClass="PersonDetailHeaderView" customModule="ML_Classifier" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="445"/>
@@ -673,7 +673,6 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
-                    <size key="freeformSize" width="414" height="1500"/>
                     <connections>
                         <outlet property="headerView" destination="eZ9-3M-nKi" id="eUL-pJ-PFN"/>
                         <outlet property="tableView" destination="Qke-tA-kaQ" id="ddr-DR-LLU"/>
@@ -1638,7 +1637,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ncF-aW-4Zp">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="633"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="hG8-bR-9a5" userLabel="Logo View" customClass="AboutUsLogoView" customModule="ML_Classifier" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -1735,43 +1734,8 @@
                                             <outlet property="ConnectWithUs" destination="ed5-MG-Dl5" id="OQj-x4-GEw"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContactUsLinkCell" rowHeight="50" id="h5e-mr-X9E" customClass="ContactUsLinkCell" customModule="ML_Classifier" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="370" width="414" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h5e-mr-X9E" id="P2w-Xf-anI">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Bd-J7-em7">
-                                                    <rect key="frame" x="25" y="11" width="119" height="28"/>
-                                                    <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="envelope.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Glb-Wk-kgC">
-                                                            <rect key="frame" x="0.0" y="1.5" width="28" height="24.5"/>
-                                                            <color key="tintColor" systemColor="labelColor"/>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsu-fO-xg3">
-                                                            <rect key="frame" x="36" y="0.0" width="83" height="28"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="5Bd-J7-em7" firstAttribute="top" secondItem="P2w-Xf-anI" secondAttribute="topMargin" id="eOu-AP-IjO"/>
-                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="5Bd-J7-em7" secondAttribute="trailing" constant="250" id="gfW-Fo-DqV"/>
-                                                <constraint firstItem="5Bd-J7-em7" firstAttribute="leading" secondItem="P2w-Xf-anI" secondAttribute="leadingMargin" constant="5" id="n9S-2U-3Ha"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="5Bd-J7-em7" secondAttribute="bottom" id="rJe-7N-mcP"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="ContactUsLink" destination="bsu-fO-xg3" id="fa9-Ja-bhV"/>
-                                            <outlet property="EmailImageView" destination="Glb-Wk-kgC" id="9pP-Bj-hhJ"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TwitterCell" rowHeight="50" id="j4z-wg-5ca" customClass="TwitterCell" customModule="ML_Classifier" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="420" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="370" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j4z-wg-5ca" id="fDP-1R-ZMM">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -1811,7 +1775,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FacebookCell" rowHeight="50" id="tkm-XZ-D3b" customClass="FacebookCell" customModule="ML_Classifier" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="470" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="420" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tkm-XZ-D3b" id="CIT-Iz-Z15">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -1851,14 +1815,25 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ags-Sa-CQc">
+                                <rect key="frame" x="20" y="649" width="94.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Contact us"/>
+                                <connections>
+                                    <action selector="emailButtonTapped:" destination="XFn-fw-2xs" eventType="touchUpInside" id="gXu-RE-sQd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hZx-7K-B05"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ncF-aW-4Zp" firstAttribute="top" secondItem="Q0f-pm-pmn" secondAttribute="top" id="BVQ-zP-sLv"/>
-                            <constraint firstAttribute="bottom" secondItem="ncF-aW-4Zp" secondAttribute="bottom" id="PxZ-ds-lTx"/>
-                            <constraint firstItem="ncF-aW-4Zp" firstAttribute="trailing" secondItem="hZx-7K-B05" secondAttribute="trailing" id="a7l-Wq-ajW"/>
-                            <constraint firstItem="ncF-aW-4Zp" firstAttribute="leading" secondItem="hZx-7K-B05" secondAttribute="leading" id="eIa-rg-6rM"/>
+                            <constraint firstItem="ncF-aW-4Zp" firstAttribute="leading" secondItem="Q0f-pm-pmn" secondAttribute="leading" id="BTW-4k-o35"/>
+                            <constraint firstAttribute="trailing" secondItem="ncF-aW-4Zp" secondAttribute="trailing" id="P2O-Ef-Hci"/>
+                            <constraint firstItem="ncF-aW-4Zp" firstAttribute="top" secondItem="Q0f-pm-pmn" secondAttribute="top" id="YaQ-de-Qnf"/>
+                            <constraint firstItem="ags-Sa-CQc" firstAttribute="leading" secondItem="Q0f-pm-pmn" secondAttribute="leadingMargin" id="bNm-ff-RIQ"/>
+                            <constraint firstItem="hZx-7K-B05" firstAttribute="bottom" secondItem="ags-Sa-CQc" secondAttribute="bottom" constant="133" id="cnd-lz-6bW"/>
+                            <constraint firstItem="ags-Sa-CQc" firstAttribute="top" secondItem="ncF-aW-4Zp" secondAttribute="bottom" constant="16" id="ga1-R8-xi7"/>
+                            <constraint firstItem="hZx-7K-B05" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ags-Sa-CQc" secondAttribute="trailing" symbolic="YES" id="yr4-wQ-jVD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About Us" id="q3a-2c-m6L"/>
@@ -1901,6 +1876,15 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GLF-Qi-Otx">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnI-PL-dLw">
+                                <rect key="frame" x="339" y="89" width="44" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="safari" catalog="system" title=""/>
+                                <connections>
+                                    <action selector="showDirectionWithSender:" destination="oZp-z2-YfI" eventType="touchUpInside" id="OKX-RL-EU1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WBd-iY-iHT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1984,13 +1968,13 @@
     <resources>
         <image name="checkmark.shield.fill" catalog="system" width="128" height="118"/>
         <image name="emptydata" width="1440" height="1024"/>
-        <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="facebook" width="48" height="48"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="newphoto" width="1840" height="1380"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="safari" catalog="system" width="128" height="121"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <image name="testtube.2" catalog="system" width="128" height="118"/>
         <image name="twitter" width="48" height="48"/>

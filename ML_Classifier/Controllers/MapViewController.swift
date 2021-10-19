@@ -13,13 +13,22 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet var mapView: MKMapView!
     
-    let maneger = CLLocationManager()
+   let maneger = CLLocationManager()
+    //let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.hidesBarsOnSwipe = false
+        
+        
+        // Request for a user's authorization for location services
+        /*locationManager.requestWhenInUseAuthorization()
+        let status = CLLocationManager.authorizationStatus()
+        if status == CLAuthorizationStatus.authorizedWhenInUse {
+            mapView.showsUserLocation = true
+        }*/
         
         mapView.showsCompass = true
         mapView.showsScale = true
@@ -30,6 +39,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func showDirection(sender: UIButton){
+        
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         maneger.desiredAccuracy = kCLLocationAccuracyBest //battery
@@ -38,7 +51,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         maneger.startUpdatingLocation()
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             manager.stopUpdatingLocation()
             
