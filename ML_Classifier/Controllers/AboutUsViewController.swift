@@ -38,6 +38,15 @@ class AboutUsViewController: UIViewController {
     func showMailComposer() {
         guard MFMailComposeViewController.canSendMail() else {
             //show alert informing the user
+            
+            
+           /* if let urlToOpen = URL(string: "https://twitter.com"){
+                UIApplication.shared.open(urlToOpen, options: [:]) { (done) in
+                    print("Link was opened successfully")
+                }
+            }*/
+            
+            
             return
         }
         
@@ -45,7 +54,7 @@ class AboutUsViewController: UIViewController {
         composer.mailComposeDelegate = self
         composer.setToRecipients(["eacc9999@outlook.com"])
         composer.setSubject("HELP!")
-        composer.setMessageBody("I love the app", isHTML: false)
+        //composer.setMessageBody("I love the app", isHTML: false)
         
         present(composer, animated: true)
     }
@@ -65,7 +74,7 @@ extension AboutUsViewController: MFMailComposeViewControllerDelegate {
         case .cancelled:
             print("Cancelled")
         case .saved:
-            print("Sved")
+            print("Saved")
         case .sent:
             print("Email Sent")
         case .failed:

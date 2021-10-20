@@ -40,6 +40,7 @@
 		B59863082703B925005078A4 /* PersonDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59863072703B925005078A4 /* PersonDiffableDataSource.swift */; };
 		B59FAB542707B97700D46B89 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FAB532707B97700D46B89 /* RoundedTextField.swift */; };
 		B59FAB572707BAA600D46B89 /* NewPersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FAB562707BAA600D46B89 /* NewPersonController.swift */; };
+		B5B049E12720BBCA00C2DC73 /* HeartPredictionClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B5B049E02720BBCA00C2DC73 /* HeartPredictionClassifier.mlmodel */; };
 		B5C63B92270EA99600D01D56 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B91270EA99600D01D56 /* AboutUsViewController.swift */; };
 		B5C63B94270EAAF800D01D56 /* AboutUsLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B93270EAAF800D01D56 /* AboutUsLogoView.swift */; };
 		B5C63B96270EB14C00D01D56 /* DescriptionTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B95270EB14B00D01D56 /* DescriptionTextCell.swift */; };
@@ -86,6 +87,7 @@
 		B59863072703B925005078A4 /* PersonDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDiffableDataSource.swift; sourceTree = "<group>"; };
 		B59FAB532707B97700D46B89 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		B59FAB562707BAA600D46B89 /* NewPersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonController.swift; sourceTree = "<group>"; };
+		B5B049E02720BBCA00C2DC73 /* HeartPredictionClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HeartPredictionClassifier.mlmodel; sourceTree = "<group>"; };
 		B5BBF76627151F060008BE32 /* ML_Classifier copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ML_Classifier copy-Info.plist"; path = "/Users/andrescastellanos/Desktop/Xcode/MyApps/ML_Classifier/ML_Classifier copy-Info.plist"; sourceTree = "<absolute>"; };
 		B5C63B91270EA99600D01D56 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		B5C63B93270EAAF800D01D56 /* AboutUsLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsLogoView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		B59862D72703A5C1005078A4 = {
 			isa = PBXGroup;
 			children = (
+				B5B049E02720BBCA00C2DC73 /* HeartPredictionClassifier.mlmodel */,
 				B59862E22703A5C2005078A4 /* ML_Classifier */,
 				B59862E12703A5C2005078A4 /* Products */,
 				B5BBF76627151F060008BE32 /* ML_Classifier copy-Info.plist */,
@@ -315,6 +318,7 @@
 				B5C63B9C270EB7F700D01D56 /* ContactUsLinkCell.swift in Sources */,
 				B56A50522706577D0078E5D3 /* PersonDetailTwoColumnCell.swift in Sources */,
 				B5C63B96270EB14C00D01D56 /* DescriptionTextCell.swift in Sources */,
+				B5B049E12720BBCA00C2DC73 /* HeartPredictionClassifier.mlmodel in Sources */,
 				B59862E42703A5C2005078A4 /* AppDelegate.swift in Sources */,
 				B50B316B271BC9D70019B3B4 /* FastinBSCell.swift in Sources */,
 				B59FAB572707BAA600D46B89 /* NewPersonController.swift in Sources */,
