@@ -19,11 +19,14 @@ class InformationViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .singleLine
+        tableView.separatorColor = .gray
+        
         //tableView.separatorColor = .systemYellow
     }
 }
 extension InformationViewController: UITableViewDataSource, UITableViewDelegate
 {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
         { return 11 }
     
@@ -32,6 +35,9 @@ extension InformationViewController: UITableViewDataSource, UITableViewDelegate
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ThalliumCell.self),for: indexPath) as! ThalliumCell
             cell.ThalliumDescriptionLabel.text = "Thal:                                                                              3 = normal;                                                                    6 = fixed defect;                                                                           7 = reversable defect;"
+            cell.backgroundColor = .systemRed
+            cell.layer.cornerRadius = 10
+            cell.clipsToBounds = true
         return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CholesterolCell.self), for: indexPath) as! CholesterolCell

@@ -695,7 +695,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ThalliumCell" rowHeight="70" id="KFt-so-D2f" customClass="ThalliumCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ThalliumCell" rowHeight="70" id="KFt-so-D2f" customClass="ThalliumCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KFt-so-D2f" id="Cog-a4-CmZ">
@@ -731,7 +731,7 @@
                                             <outlet property="ThalliumLabel" destination="Lv0-Zo-lCM" id="cuu-OP-vuD"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CholesterolCell" rowHeight="70" id="Q82-AK-MuQ" customClass="CholesterolCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CholesterolCell" rowHeight="70" id="Q82-AK-MuQ" customClass="CholesterolCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="114.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q82-AK-MuQ" id="1Ai-hj-NbD">
@@ -770,7 +770,7 @@
                                             <outlet property="CholesterolLabel" destination="qHo-hi-26s" id="Lfd-zN-CsP"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChestPainTypeCell" rowHeight="70" id="n3p-Sv-KVq" customClass="ChestPainTypeCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChestPainTypeCell" rowHeight="70" id="n3p-Sv-KVq" customClass="ChestPainTypeCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="184.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n3p-Sv-KVq" id="JqB-Ls-j3k">
@@ -806,7 +806,7 @@
                                             <outlet property="ChestPainTypeLabel" destination="QbH-3z-tN8" id="h1O-JG-2GK"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MaximumHeartRateCell" rowHeight="70" id="D76-Jc-MWK" customClass="MaximumHeartRateCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MaximumHeartRateCell" rowHeight="70" id="D76-Jc-MWK" customClass="MaximumHeartRateCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="254.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D76-Jc-MWK" id="vfH-PL-o9d">
@@ -845,7 +845,7 @@
                                             <outlet property="MaximumHeartRateLabel" destination="nF7-Lz-ffM" id="E4i-0I-MYz"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FastinBSCell" rowHeight="70" id="0xj-Om-r4u" customClass="FastinBSCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FastinBSCell" rowHeight="70" id="0xj-Om-r4u" customClass="FastinBSCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="324.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0xj-Om-r4u" id="LWk-92-V6n">
@@ -881,7 +881,7 @@
                                             <outlet property="FastinBloodSLabel" destination="Hjw-HG-IME" id="Utb-Bg-0gx"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestingBloodPressureCell" rowHeight="70" id="KPd-89-XKF" customClass="RestingBloodPressureCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestingBloodPressureCell" rowHeight="70" id="KPd-89-XKF" customClass="RestingBloodPressureCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="394.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KPd-89-XKF" id="svd-Ob-eXF">
@@ -917,7 +917,7 @@
                                             <outlet property="RestingBloodPressureLabel" destination="GZK-zV-R1a" id="hQS-di-WqL"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NumberVesselsCell" rowHeight="70" id="fHk-va-NiZ" customClass="NumberVesselsCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NumberVesselsCell" rowHeight="70" id="fHk-va-NiZ" customClass="NumberVesselsCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="464.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fHk-va-NiZ" id="moh-b9-9df">
@@ -953,7 +953,7 @@
                                             <outlet property="NumberOfMayorVesselsLabel" destination="t3c-aN-S72" id="Mqc-d6-NXG"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ExerciseInducedAnginaCell" rowHeight="70" id="9g2-sC-iVC" customClass="ExerciseInducedAnginaCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ExerciseInducedAnginaCell" rowHeight="70" id="9g2-sC-iVC" customClass="ExerciseInducedAnginaCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="534.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9g2-sC-iVC" id="mWL-l5-A0R">
@@ -989,7 +989,7 @@
                                             <outlet property="ExerciseInducedAnginaLabel" destination="rLi-J3-wem" id="xVw-lC-JFn"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TheSlopeExerciseSTCell" rowHeight="70" id="Ymq-vf-FJW" customClass="TheSlopeExerciseSTCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TheSlopeExerciseSTCell" rowHeight="70" id="Ymq-vf-FJW" customClass="TheSlopeExerciseSTCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="604.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ymq-vf-FJW" id="70Q-L3-vFS">
@@ -1025,7 +1025,7 @@
                                             <outlet property="TheSlopeExerciseSTLabel" destination="ReU-AM-sBU" id="rnS-SO-gNH"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="STDepressionCell" rowHeight="70" id="f66-pT-jSJ" customClass="STDepressionCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="STDepressionCell" rowHeight="70" id="f66-pT-jSJ" customClass="STDepressionCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="674.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f66-pT-jSJ" id="vo8-Qp-onI">
@@ -1061,7 +1061,7 @@
                                             <outlet property="STDepressionLabel" destination="iRV-oq-pIm" id="h4s-LN-gv5"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestingElectroCell" rowHeight="70" id="Jtj-Vq-S84" customClass="RestingElectroCell" customModule="ML_Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestingElectroCell" rowHeight="70" id="Jtj-Vq-S84" customClass="RestingElectroCell" customModule="ML_Classifier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="744.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jtj-Vq-S84" id="2yt-5t-s07">
@@ -1599,9 +1599,20 @@
                     </navigationItem>
                     <size key="freeformSize" width="414" height="2000"/>
                     <connections>
+                        <outlet property="ChestPainTextField" destination="kVq-6g-evY" id="ZBX-5A-IT4"/>
+                        <outlet property="CholesterolTextField" destination="0Hv-Ti-xAf" id="ddI-TA-dS7"/>
+                        <outlet property="ExerciseInducedTextField" destination="Wd8-Yc-w1D" id="pUo-pR-D1d"/>
+                        <outlet property="FastingBloodSugarTextField" destination="okf-ml-VIB" id="nbg-Z9-XHk"/>
+                        <outlet property="HeartRateTextField" destination="Z10-hr-G1c" id="4ri-bM-76t"/>
+                        <outlet property="MajorVesselsTextField" destination="st6-GM-JP8" id="DAk-cV-afc"/>
+                        <outlet property="RbloodPressureTextField" destination="WRc-Ff-oFK" id="wi5-qs-Je7"/>
+                        <outlet property="RestinElectroCardiographicTextField" destination="taX-5g-yUi" id="gxV-Ft-7pR"/>
+                        <outlet property="StDepressionTextField" destination="07r-Rf-lx5" id="EKR-yr-6rA"/>
+                        <outlet property="TheSlopeofPeakExerciseTextField" destination="v4k-Z6-cUh" id="xAj-37-o5k"/>
                         <outlet property="ageTextField" destination="msz-0v-vh5" id="tBb-ed-fWe"/>
                         <outlet property="nameTextField" destination="z3r-o9-Cpc" id="R7n-xg-bYK"/>
                         <outlet property="photoImageView" destination="Wmi-FC-ZeC" id="pSE-gy-aIz"/>
+                        <outlet property="sexTextField" destination="dKr-TS-o3j" id="fQE-iS-KU5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMj-xs-j6v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
