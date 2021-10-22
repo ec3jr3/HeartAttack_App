@@ -52,20 +52,24 @@ class TestViewController: UIViewController {
             fatalError("Unexpected runtime error")}
         nameForTestL.text = prediction.Heart_Disease
         print(prediction.Heart_DiseaseProbability)
+        personTest.HeartResult.append(prediction.Heart_Disease)
+        print(personTest.HeartResult)
+        //print(personTest)
+        let ResultPerson = personTest
+        print(ResultPerson)
        // dismiss(animated: true, completion: nil)
         
         
         
         //If the person got the results from the test a botton will apear to show the map for
         //nearest hospitals
-        if personTest.DiabetesResult == "0" || personTest.DiabetesResult == "1"{
+        if personTest.HeartResult == "0" || personTest.HeartResult == "1"{
             mapButton.imageView?.isHidden = false
             mapButton.isEnabled = true
-        } else if personTest.DiabetesResult == "" {
+        } else if personTest.HeartResult == "" {
             mapButton.imageView?.isHidden = true //we hide the button if the person doesnt have results
             mapButton.isEnabled = false //disabling the button if the person doesnt have results
         }
         
     }
-
 }

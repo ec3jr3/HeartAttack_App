@@ -13,9 +13,11 @@ class ProfileTableViewController: UITableViewController{
     //var informaciondeUsuarios:[PersonIn] = []
     //var fetchResultController: NSFetchedResultsController<PersonIn>!
     var informaciondeUsuario:[ProfileInfo] = [
-        ProfileInfo(name: "Andres", image: "image1", edad: "21", sexo: "1", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: true, DiabetesResult: "1"),
-        ProfileInfo(name: "Holland", image: "image3", edad: "21", sexo: "0", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: true),
-        ProfileInfo(name: "Celine", image: "image2", edad: "19", sexo: "0", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: true)]
+        ProfileInfo(name: "Andres", image: "image1", edad: "21", sexo: "1", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: false),
+        ProfileInfo(name: "Holland", image: "image3", edad: "21", sexo: "0", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: false),
+        ProfileInfo(name: "Celine", image: "image2", edad: "19", sexo: "0", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: false)]
+    
+    var ResultTest: ProfileInfo = ProfileInfo()
     
     @IBOutlet var emptyProfileView: UIView!
     
@@ -96,11 +98,11 @@ class ProfileTableViewController: UITableViewController{
                 cell.favoriteImageView.isHidden = informaciondeUsuarios.Outcome ? false : true
                 
                 //whenever the outcome is either "1" or "0" is going to show the image that the test was already done
-                if informaciondeUsuarios.DiabetesResult == "0"{
+                if self.ResultTest.HeartResult == "Presence"{
                     cell.TestDone.isHidden = false
-                } else if informaciondeUsuarios.DiabetesResult == "1" {
+                } else if informaciondeUsuarios.HeartResult == "Absence" {
                     cell.TestDone.isHidden = false
-                }else if informaciondeUsuarios.DiabetesResult == "" {
+                }else if informaciondeUsuarios.HeartResult == "" {
                     cell.TestDone.isHidden = true
                 }
     return cell }
@@ -114,7 +116,7 @@ class ProfileTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         // Mark as favorite action
-        let favoriteAction = UIContextualAction(style: .destructive, title: "") { (action, sourceView, completionHandler) in
+       let favoriteAction = UIContextualAction(style: .destructive, title: "") { (action, sourceView, completionHandler) in
             
             let cell = tableView.cellForRow(at: indexPath) as! PersonTableViewCell
 
