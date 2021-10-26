@@ -15,7 +15,7 @@ class ProfileTableViewController: UITableViewController{
     var informaciondeUsuario:[ProfileInfo] = [
         ProfileInfo(name: "Andres", image: "image1", edad: "21", sexo: "1", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: false),
         ProfileInfo(name: "Holland", image: "image3", edad: "21", sexo: "0", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: false),
-        ProfileInfo(name: "Celine", image: "image2", edad: "19", sexo: "0", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: false)]
+        ProfileInfo(name: "Celine", image: "image2", edad: "74", sexo: "0", chest_pain_type: "2", bp: "120", cholesterol: "269", fbs_over_120: "0", ekg_results: "2", max_hr: "121", exercise_angina: "1", st_depressionL: "0.2", slope_of_st: "1", number_of_vessels_fluro: "1", thallium: "3", Outcome: false)]
     
     var ResultTest: ProfileInfo = ProfileInfo()
     

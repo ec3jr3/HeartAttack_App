@@ -16,12 +16,6 @@ class TestViewController: UIViewController {
     
     
     @IBOutlet var nameForTestL : UILabel!
-    @IBOutlet var ResultsTitile: UILabel!{
-        didSet{
-            ResultsTitile.layer.cornerRadius = 8
-            ResultsTitile.clipsToBounds = true
-        }
-    }
     
     @IBOutlet var mapButton: UIButton!
     
@@ -50,11 +44,17 @@ class TestViewController: UIViewController {
         guard let prediction = try? mModel.prediction(Age: Double(age)!, Sex: Double(sex)!, Chest_pain_type: Double(ches_pain)!, BP: Double(bd)!, Cholesterol: Double(cholesterol)!, FBS_over_120: Double(fbs)!, EKG_results: Double(ekg)!, Max_HR: Double(max_hr)!, Exercise_angina: Double(exercise_angina)!, ST_depression: Double(st_depression)!, Slope_of_ST: Double(slope_st)!, Number_of_vessels_fluro: Double(num_vessels)!, Thallium: Double(thallium)!)
         else {
             fatalError("Unexpected runtime error")}
-        nameForTestL.text = prediction.Heart_Disease
+        
+        if(prediction.Heart_Disease == "Presence"){
+            nameForTestL.textColor = UIColor(red: 0.87, green: 0.18, blue: 0.18, alpha: 1.0)
+            nameForTestL.text = "You most likely have a heart disease"
+        }else {
+            nameForTestL.textColor = UIColor(red: 0.18, green: 0.87, blue: 0.18, alpha: 1.0)
+            nameForTestL.text = "It seems you don't have a heart disease"
+        }
         print(prediction.Heart_DiseaseProbability)
         personTest.HeartResult.append(prediction.Heart_Disease)
         print(personTest.HeartResult)
-        //print(personTest)
         let ResultPerson = personTest
         print(ResultPerson)
        // dismiss(animated: true, completion: nil)
