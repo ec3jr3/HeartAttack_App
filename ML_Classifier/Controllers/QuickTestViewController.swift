@@ -191,6 +191,7 @@ class QuickTestViewController: UITableViewController {
                 let alertAction = UIAlertAction(title: "Got it", style: .default, handler: nil)
                 alertController.addAction(alertAction)
                 self.present(alertController, animated: true, completion: nil)
+            }
         }
         let TestAction = UIAlertAction(title: "Run Test", style: .default, handler: TestActionHandle)
         optionMenu.addAction(TestAction)
