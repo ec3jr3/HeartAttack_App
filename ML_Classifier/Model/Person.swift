@@ -7,7 +7,7 @@
 
 
 struct ProfileInfo: Hashable {
-    //hello mundo
+
     var name: String = ""
     var image: String = ""
     var edad: String = ""
@@ -31,21 +31,31 @@ struct ProfileInfo: Hashable {
 }
 /*import CoreData
 
-public class PersonIn: NSManagedObject {
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<PersonIn>{
-        return NSFetchRequest<PersonIn>(entityName: "Person")
+public class ProfileInfo: NSManagedObject {
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<ProfileInfo>{
+        return NSFetchRequest<ProfileInfo>(entityName: "Person")
     }
     @NSManaged public var name: String
-    @NSManaged public var age: String
-    @NSManaged public var Sexo: String
-    @NSManaged public var Pregnancies: String
-    @NSManaged public var Glucose: String
-    @NSManaged public var BloodPressure: String
-    @NSManaged public var SkinThickness: String
-    @NSManaged public var Insuline: String
-    @NSManaged public var BMI: String
-    @NSManaged public var DiabetesPredigreeFunc: String
+    @NSManaged public var image: Data
+    @NSManaged public var edad: String
+    
+    @NSManaged public var sexo: String
+    @NSManaged public var chest_pain_type: String
+    @NSManaged public var bp: String
+    @NSManaged public var cholesterol: String
+    @NSManaged public var fbs_over_120: String
+    @NSManaged public var ekg_results: String
+    @NSManaged public var max_hr: String
+    @NSManaged public var exercise_angina: String
+    @NSManaged public var st_depressionL: String
+    @NSManaged public var slope_of_st: String
+    @NSManaged public var number_of_vessels_fluro: String
+    @NSManaged public var thallium: String
+    
     @NSManaged public var Outcome: String
-    @NSManaged public var Image: Data
+    @NSManaged public var HeartResult: String
+    
+    
+    
 }*/
 

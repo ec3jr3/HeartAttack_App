@@ -54,7 +54,7 @@ class AboutUsViewController: UIViewController {
         composer.mailComposeDelegate = self
         composer.setToRecipients(["eacc9999@outlook.com"])
         composer.setSubject("HELP!")
-        //composer.setMessageBody("I love the app", isHTML: false)
+        composer.setMessageBody("I love the app", isHTML: false)
         
         present(composer, animated: true)
     }

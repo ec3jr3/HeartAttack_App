@@ -8,11 +8,10 @@
 import UIKit
 import CoreData
 
-class NewPersonController: UITableViewController {
+class NewPersonController: UITableViewController{
     
-    var personEdit: ProfileInfo = ProfileInfo()
-    //var person: PersonIn!
-    
+    //var personEdit: ProfileInfo = ProfileInfo()
+    var person: ProfileInfo!
     
     
     @IBOutlet var nameTextField: RoundedBorderTextField! {
@@ -104,6 +103,14 @@ class NewPersonController: UITableViewController {
             RestinElectroCardiographicTextField.delegate = self
         }
     }
+    @IBOutlet var thalliumTextField:
+    RoundedBorderTextField! {
+        didSet{
+            thalliumTextField.tag = 14
+            thalliumTextField.keyboardType = .asciiCapableNumberPad
+            thalliumTextField.delegate = self
+        }
+    }
     @IBOutlet var photoImageView: UIImageView! {
         didSet {
             photoImageView.layer.cornerRadius = 10.0
@@ -115,6 +122,7 @@ class NewPersonController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Customize the navigation bar appearance
             if let appearance = navigationController?.navigationBar.standardAppearance {
@@ -180,19 +188,30 @@ class NewPersonController: UITableViewController {
         print("Diabetes Func: \(RestinElectroCardiographicTextField.text ?? "")")
         
         /*if let appDelegate = (UIApplication.shared.delegate as? AppDelegate){
-            person = PersonIn(context: appDelegate.persistentContainer.viewContext)
+            person = ProfileInfo(context: appDelegate.persistentContainer.viewContext)
+            person.bp = RbloodPressureTextField.text!
+            person.chest_pain_type = ChestPainTextField.text!
+            person.cholesterol = CholesterolTextField.text!
+            person.edad = ageTextField.text!
+            person.ekg_results = RestinElectroCardiographicTextField.text!
+            person.fbs_over_120 = FastingBloodSugarTextField.text!
+            person.max_hr  = HeartRateTextField.text!
             person.name = nameTextField.text!
-            person.age = ageTextField.text!
-            person.Pregnancies = preganTextField.text!
-            person.Glucose = glucoseTextField.text!
-            person.BloodPressure = bloodTextField.text!
-            person.SkinThickness = skinthicTextField.text!
-            person.Insuline = InsulineTextField.text!
-            person.BMI = BMITextField.text!
-            person.DiabetesPredigreeFunc = FuncTextField.text!
+            person.number_of_vessels_fluro = MajorVesselsTextField.text!
+            person.sexo = sexTextField.text!
+            person.slope_of_st = TheSlopeofPeakExerciseTextField.text!
+            person.st_depressionL = StDepressionTextField.text!
+            person.thallium = thalliumTextField.text!
+            
+            person.name = nameTextField.text!
+            person.edad = ageTextField.text!
+            person.sexo = sexTextField.text!
+            
+            person.bp = RbloodPressureTextField.text!
+            
             
             if let imageData = photoImageView.image?.pngData() {
-                person.Image = imageData
+                person.image = imageData
             }
             print("Saving data to context...")
             appDelegate.saveContext()

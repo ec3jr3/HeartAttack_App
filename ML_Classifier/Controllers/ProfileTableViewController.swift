@@ -10,12 +10,14 @@ import CoreData
 
 class ProfileTableViewController: UITableViewController{
     
-    //var informaciondeUsuarios:[PersonIn] = []
-    //var fetchResultController: NSFetchedResultsController<PersonIn>!
+    //var informaciondeUsuarios:[ProfileInfo] = []
+    //var fetchResultController: NSFetchedResultsController<ProfileInfo>!
+    
     var informaciondeUsuario:[ProfileInfo] = [
         ProfileInfo(name: "Andres", image: "image1", edad: "21", sexo: "1", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: false),
         ProfileInfo(name: "Holland", image: "image3", edad: "21", sexo: "0", chest_pain_type: "4", bp: "130", cholesterol: "322", fbs_over_120: "0", ekg_results: "2", max_hr: "109", exercise_angina: "0", st_depressionL: "2.4", slope_of_st: "2", number_of_vessels_fluro: "3", thallium: "3", Outcome: false),
         ProfileInfo(name: "Celine", image: "image2", edad: "74", sexo: "0", chest_pain_type: "2", bp: "120", cholesterol: "269", fbs_over_120: "0", ekg_results: "2", max_hr: "121", exercise_angina: "1", st_depressionL: "0.2", slope_of_st: "1", number_of_vessels_fluro: "1", thallium: "3", Outcome: false)]
+    
     
     var ResultTest: ProfileInfo = ProfileInfo()
     
@@ -26,6 +28,9 @@ class ProfileTableViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.backgroundView = emptyProfileView
+        tableView.backgroundView?.isHidden = informaciondeUsuario.count == 0 ? false : true
+        
         tableView.dataSource = dataSource
         tableView.separatorStyle = .singleLine
        // tableView.separatorColor = .systemYellow
@@ -33,14 +38,12 @@ class ProfileTableViewController: UITableViewController{
         //enable large navigation bar tiles
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        //
-        
         // Create a snapshot and populate the data
-       //fetchRestaurantData()
+        //fetchtPersonData()
+        
         var snapshot = NSDiffableDataSourceSnapshot<Section, ProfileInfo>()
         snapshot.appendSections([.all])
         snapshot.appendItems(informaciondeUsuario, toSection: .all)
-        
         dataSource.apply(snapshot, animatingDifferences: false)
         
         tableView.cellLayoutMarginsFollowReadableWidth = true
@@ -82,6 +85,41 @@ class ProfileTableViewController: UITableViewController{
         
     }
     
+    // MARK: - Core Data
+    
+   /* func fetchtPersonData() {
+        // Fetch data from data store
+        let fetchRequest: NSFetchRequest<ProfileInfo> = ProfileInfo.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+
+        if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+            let context = appDelegate.persistentContainer.viewContext
+            fetchResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+            fetchResultController.delegate = self
+
+            do {
+                try fetchResultController.performFetch()
+                updateSnapshot()
+            } catch {
+                print(error)
+            }
+        }
+    }
+    func updateSnapshot(animatingChange: Bool = false) {
+        
+        if let fetchedObjects = fetchResultController.fetchedObjects {
+            informaciondeUsuarios = fetchedObjects
+        }
+        
+        // Create a snapshot and populate the data
+        var snapshot = NSDiffableDataSourceSnapshot<Section, ProfileInfo>()
+        snapshot.appendSections([.all])
+        snapshot.appendItems(informaciondeUsuarios, toSection: .all)
+        
+        dataSource.apply(snapshot, animatingDifferences: animatingChange)
+    }*/
+    
     // MARK: - UITableView Diffable Data Source
     
     //to configure the data of the table view
@@ -97,14 +135,7 @@ class ProfileTableViewController: UITableViewController{
                 cell.ProfilePicImage.image = UIImage(named: informaciondeUsuarios.image)
                 cell.favoriteImageView.isHidden = informaciondeUsuarios.Outcome ? false : true
                 
-                //whenever the outcome is either "1" or "0" is going to show the image that the test was already done
-                if self.ResultTest.HeartResult == "Presence"{
-                    cell.TestDone.isHidden = false
-                } else if informaciondeUsuarios.HeartResult == "Absence" {
-                    cell.TestDone.isHidden = false
-                }else if informaciondeUsuarios.HeartResult == "" {
-                    cell.TestDone.isHidden = true
-                }
+               
     return cell }
             
     )
@@ -113,7 +144,7 @@ class ProfileTableViewController: UITableViewController{
     
     // MARK: - UITableViewDelegate Protocol
     
-    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+   override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         // Mark as favorite action
        let favoriteAction = UIContextualAction(style: .destructive, title: "") { (action, sourceView, completionHandler) in
@@ -196,6 +227,12 @@ class ProfileTableViewController: UITableViewController{
     @IBAction func unwindToHome(for unwindSegue: UIStoryboardSegue) {
         dismiss(animated: true, completion: nil)
     }
-    
 }
 
+/*extension ProfileTableViewController: NSFetchedResultsControllerDelegate {
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        updateSnapshot()
+    }
+    
+}*/

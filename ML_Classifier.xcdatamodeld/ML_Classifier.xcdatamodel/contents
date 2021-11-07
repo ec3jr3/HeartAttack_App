@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Person" representedClassName=".Person" syncable="YES">
+        <attribute name="bp" attributeType="String"/>
+        <attribute name="chest_pain_type" attributeType="String"/>
+        <attribute name="cholesterol" attributeType="String"/>
+        <attribute name="edad" optional="YES" attributeType="String"/>
+        <attribute name="ekg_results" attributeType="String"/>
+        <attribute name="fbs_over_120" attributeType="String"/>
+        <attribute name="heartResult" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="max_hr" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="number_of_vessels_fluro" attributeType="String"/>
+        <attribute name="outcome" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="sexo" attributeType="String"/>
+        <attribute name="slope_of_st" attributeType="String"/>
+        <attribute name="st_depressionL" attributeType="String"/>
+        <attribute name="thallium" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="14"/>
+    </elements>
+</model>
