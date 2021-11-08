@@ -196,7 +196,6 @@ class QuickTestViewController: UITableViewController {
         let TestAction = UIAlertAction(title: "Run Test", style: .default, handler: TestActionHandle)
         optionMenu.addAction(TestAction)
         
-        //ageTextField.text = ""
     }
 
     // MARK: - Table view data source
