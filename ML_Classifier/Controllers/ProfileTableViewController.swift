@@ -135,7 +135,6 @@ class ProfileTableViewController: UITableViewController{
                 cell.ProfilePicImage.image = UIImage(named: informaciondeUsuarios.image)
                 cell.favoriteImageView.isHidden = informaciondeUsuarios.Outcome ? false : true
                 
-               
     return cell }
             
     )

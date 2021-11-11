@@ -37,16 +37,6 @@ class AboutUsViewController: UIViewController {
     
     func showMailComposer() {
         guard MFMailComposeViewController.canSendMail() else {
-            //show alert informing the user
-            
-            
-           /* if let urlToOpen = URL(string: "https://twitter.com"){
-                UIApplication.shared.open(urlToOpen, options: [:]) { (done) in
-                    print("Link was opened successfully")
-                }
-            }*/
-            
-            
             return
         }
         
@@ -59,7 +49,7 @@ class AboutUsViewController: UIViewController {
         present(composer, animated: true)
     }
 }
-
+//email composer
 extension AboutUsViewController: MFMailComposeViewControllerDelegate {
    
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {

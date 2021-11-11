@@ -14,12 +14,8 @@ class TestViewController: UIViewController {
     
     var personTest: ProfileInfo = ProfileInfo()
     
-    
     @IBOutlet var nameForTestL : UILabel!
     
-    @IBOutlet var mapButton: UIButton!
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,31 +41,16 @@ class TestViewController: UIViewController {
         else {
             fatalError("Unexpected runtime error")}
         
-        if(prediction.Heart_Disease == "Presence"){
-            nameForTestL.textColor = UIColor(red: 0.87, green: 0.18, blue: 0.18, alpha: 1.0)
-            nameForTestL.text = "You most likely have a heart disease"
-        }else {
-            nameForTestL.textColor = UIColor(red: 0.18, green: 0.87, blue: 0.18, alpha: 1.0)
-            nameForTestL.text = "It seems you don't have a heart disease"
-        }
+        nameForTestL.text = (prediction.Heart_Disease == "Presence") ? "You most likely have a heart disease" : "It seems you don't have a heart disease"
+        
+        nameForTestL.textColor = (prediction.Heart_Disease == "Presence") ? UIColor(red: 0.87, green: 0.18, blue: 0.18, alpha: 1.0) : UIColor(red: 0.18, green: 0.87, blue: 0.18, alpha: 1.0)
+        
         print(prediction.Heart_DiseaseProbability)
         personTest.HeartResult.append(prediction.Heart_Disease)
         print(personTest.HeartResult)
         let ResultPerson = personTest
         print(ResultPerson)
        // dismiss(animated: true, completion: nil)
-        
-        
-        
-        //If the person got the results from the test a botton will apear to show the map for
-        //nearest hospitals
-        if personTest.HeartResult == "0" || personTest.HeartResult == "1"{
-            mapButton.imageView?.isHidden = false
-            mapButton.isEnabled = true
-        } else if personTest.HeartResult == "" {
-            mapButton.imageView?.isHidden = true //we hide the button if the person doesnt have results
-            mapButton.isEnabled = false //disabling the button if the person doesnt have results
-        }
         
     }
 }
