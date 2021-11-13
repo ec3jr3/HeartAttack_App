@@ -48,6 +48,7 @@
 		B5C63B9C270EB7F700D01D56 /* ContactUsLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B9B270EB7F700D01D56 /* ContactUsLinkCell.swift */; };
 		B5C63B9E270EBC0200D01D56 /* TwitterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B9D270EBC0200D01D56 /* TwitterCell.swift */; };
 		B5C63BA0270EBDD800D01D56 /* FacebookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B9F270EBDD800D01D56 /* FacebookCell.swift */; };
+		B5CC419F273F2FA5006693E3 /* VariableTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CC419E273F2FA5006693E3 /* VariableTextCell.swift */; };
 		B5D1A0BE273474AA0070C070 /* ML_Classifier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5D1A0BC273474AA0070C070 /* ML_Classifier.xcdatamodeld */; };
 		B5D1A0C22735A1E20070C070 /* QuickTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D1A0C12735A1E20070C070 /* QuickTestViewController.swift */; };
 /* End PBXBuildFile section */
@@ -97,6 +98,7 @@
 		B5C63B9B270EB7F700D01D56 /* ContactUsLinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsLinkCell.swift; sourceTree = "<group>"; };
 		B5C63B9D270EBC0200D01D56 /* TwitterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCell.swift; sourceTree = "<group>"; };
 		B5C63B9F270EBDD800D01D56 /* FacebookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookCell.swift; sourceTree = "<group>"; };
+		B5CC419E273F2FA5006693E3 /* VariableTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableTextCell.swift; sourceTree = "<group>"; };
 		B5D1A0BD273474AA0070C070 /* ML_Classifier.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ML_Classifier.xcdatamodel; sourceTree = "<group>"; };
 		B5D1A0C12735A1E20070C070 /* QuickTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,6 +185,7 @@
 				B59FAB532707B97700D46B89 /* RoundedTextField.swift */,
 				B5C63B93270EAAF800D01D56 /* AboutUsLogoView.swift */,
 				B5C63B95270EB14B00D01D56 /* DescriptionTextCell.swift */,
+				B5CC419E273F2FA5006693E3 /* VariableTextCell.swift */,
 				B5C63B97270EB21300D01D56 /* VersionColumnCell.swift */,
 				B5C63B99270EB52900D01D56 /* ConnectWithUsCell.swift */,
 				B5C63B9B270EB7F700D01D56 /* ContactUsLinkCell.swift */,
@@ -332,6 +335,7 @@
 				B56A504C2706418B0078E5D3 /* ProfileDetailViewController.swift in Sources */,
 				B5C63B92270EA99600D01D56 /* AboutUsViewController.swift in Sources */,
 				B59862FE2703A743005078A4 /* ProfileTableViewController.swift in Sources */,
+				B5CC419F273F2FA5006693E3 /* VariableTextCell.swift in Sources */,
 				B59863062703B574005078A4 /* Person.swift in Sources */,
 				B59FAB542707B97700D46B89 /* RoundedTextField.swift in Sources */,
 				B5D1A0C22735A1E20070C070 /* QuickTestViewController.swift in Sources */,

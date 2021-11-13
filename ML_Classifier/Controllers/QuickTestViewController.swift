@@ -147,6 +147,74 @@ class QuickTestViewController: UITableViewController{
         }
     }
     
+    @IBAction func infoThallium(){
+        let infoThallium = UIAlertController(title: nil, message: "Thal:                                                                              3 = normal;                                                                    6 = fixed defect;                                                                           7 = reversable defect;", preferredStyle: .alert)
+        let infoAction = UIAlertAction(title: "Thank you", style: .default, handler: nil)
+        infoThallium.addAction(infoAction)
+        self.present(infoThallium, animated: true, completion: nil)
+    }
+    @IBAction func ChestPain(){
+        let ChestController = UIAlertController(title: nil, message: "Chest pain type                                                         Value 1: typical angina.                                                  Value 2: atypical angina.                                                   Value 3: non-anginal pain.                                            Value 4: asymptomatic.", preferredStyle: .alert)
+        let infoAction = UIAlertAction(title: "Thank you", style: .default, handler: nil)
+        ChestController.addAction(infoAction)
+        self.present(ChestController, animated: true, completion: nil)
+    }
+    @IBAction func MaxHeartRate() {
+        let HeartRateController = UIAlertController(title: nil, message: "Maximum heart rate achieved ", preferredStyle: .alert)
+        let infoAction = UIAlertAction(title: "Thank you", style: .default, handler: nil)
+        HeartRateController.addAction(infoAction)
+        self.present(HeartRateController, animated: true, completion: nil)
+    }
+    @IBAction func RestingBlood() {
+        let RestingBloodController = UIAlertController(title: nil, message: "Resting blood pressure                                                (in mm Hg on admission to the hospital) ", preferredStyle: .alert)
+        let infoAction = UIAlertAction(title: "Thank you", style: .default, handler: nil)
+        RestingBloodController.addAction(infoAction)
+        self.present(RestingBloodController, animated: true, completion: nil)
+    }
+    @IBAction func NumOfMajorVeseels(){
+        let MajorVesselsController = UIAlertController(title: nil, message: "Number of major vessels (0-3) colored by flourosopy ", preferredStyle: .alert)
+        let infoAction = UIAlertAction(title: "Thank you", style: .default, handler: nil)
+        MajorVesselsController.addAction(infoAction)
+        self.present(MajorVesselsController, animated: true, completion: nil)
+    }
+    @IBAction func Cholesterol(){
+        let CholesterolController = UIAlertController(title: nil, message: "Serum cholestoral in mg/dl", preferredStyle: .alert)
+        let infoAction = UIAlertAction(title: "Thank you", style: .default, handler: nil)
+        CholesterolController.addAction(infoAction)
+        self.present(CholesterolController, animated: true, completion: nil)
+    }
+    @IBAction func FastingBloodS(){
+        let FastingBloodSController = UIAlertController(title: nil, message: "(Fasting blood sugar > 120 mg/dl)                                                                 (1 = true; 0 = false) ", preferredStyle: .alert)
+        let infoAction = UIAlertAction(title: "Thank you", style: .default, handler: nil)
+        FastingBloodSController.addAction(infoAction)
+        self.present(FastingBloodSController, animated: true, completion: nil)
+    }
+    @IBAction func ExerciseInducedA(){
+        let ExerciseInducedAController = UIAlertController(title: nil, message: "Exercise induced angina                (1 = yes; 0 = no) ", preferredStyle: .alert)
+        let infoAction = UIAlertAction(title: "Thank you", style: .default, handler: nil)
+        ExerciseInducedAController.addAction(infoAction)
+        self.present(ExerciseInducedAController, animated: true, completion: nil)
+    }
+    @IBAction func SlopeOfPeakExercise(){
+        let SlopeOfPeakExerciseController = UIAlertController(title: nil, message: "The slope of the peak exercise ST segment.          Value 1: upsloping.                                                                     Value 2: flat.                                                                              Value 3: downsloping ", preferredStyle: .alert)
+        let infoAction = UIAlertAction(title: "Thank you", style: .default, handler: nil)
+        SlopeOfPeakExerciseController.addAction(infoAction)
+        self.present(SlopeOfPeakExerciseController, animated: true, completion: nil)
+    }
+    @IBAction func StDepression(){
+        let StDepressionController = UIAlertController(title: nil, message: "Oldpeak = ST depression induced by exercise relative to rest ", preferredStyle: .alert)
+        let infoAction = UIAlertAction(title: "Thank you", style: .default, handler: nil)
+        StDepressionController.addAction(infoAction)
+        self.present(StDepressionController, animated: true, completion: nil)
+    }
+    @IBAction func RestingECG(){
+        let RestingECGController = UIAlertController(title: nil, message: "Resting electrocardiographic results.                                                               Value 0: normal.                                                                            Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV).                                                                            Value 2: showing probable or definite left ventricular hypertrophy by Estes' criteria ", preferredStyle: .alert)
+        let infoAction = UIAlertAction(title: "Thank you", style: .default, handler: nil)
+        RestingECGController.addAction(infoAction)
+        self.present(RestingECGController, animated: true, completion: nil)
+    }
+    
+    
     //When the user taps in the run test button
     @IBAction func test(){
         
@@ -186,19 +254,19 @@ class QuickTestViewController: UITableViewController{
                 return
             }
             
-            print("age \(age) ")
-            print("sex \(sex)")
-            print("thallium \(thallium)")
-            print("ches \(ches_pain)")
-            print(max_hr)
-            print(bd)
-            print(num_vessels)
-            print(cholesterol)
-            print(fbs)
-            print(exercise_angina)
-            print(slope_st)
-            print(st_depression)
-            print(ekg)
+            print("age \(age!) ")
+            print("sex \(sex!)")
+            print("thallium \(thallium!)")
+            print("ches \(ches_pain!)")
+            print(max_hr!)
+            print(bd!)
+            print(num_vessels!)
+            print(cholesterol!)
+            print(fbs!)
+            print(exercise_angina!)
+            print(slope_st!)
+            print(st_depression!)
+            print(ekg!)
             
             //Inserting varibles in the MLModel
             guard let prediction = try? self.classifier.prediction(Age: age!, Sex: sex!, Chest_pain_type: ches_pain!, BP: bd! , Cholesterol: cholesterol!, FBS_over_120: fbs!, EKG_results: ekg!, Max_HR: max_hr!, Exercise_angina: exercise_angina!, ST_depression: st_depression!, Slope_of_ST: slope_st!, Number_of_vessels_fluro: num_vessels!, Thallium: thallium!)

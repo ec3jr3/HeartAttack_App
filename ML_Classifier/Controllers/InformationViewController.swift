@@ -35,7 +35,6 @@ extension InformationViewController: UITableViewDataSource, UITableViewDelegate
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ThalliumCell.self),for: indexPath) as! ThalliumCell
             cell.ThalliumDescriptionLabel.text = "Thal:                                                                              3 = normal;                                                                    6 = fixed defect;                                                                           7 = reversable defect;"
-            cell.backgroundColor = .systemRed
             cell.layer.cornerRadius = 10
             cell.clipsToBounds = true
         return cell

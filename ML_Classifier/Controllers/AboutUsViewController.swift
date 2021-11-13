@@ -79,7 +79,7 @@ extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -87,23 +87,26 @@ extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: DescriptionTextCell.self), for: indexPath) as! DescriptionTextCell
             cell.descriptionLabel.text = "Esta aplicación busca facilitar el acceso de herramientas que ayuden a predecir ataques al corazon, esto puede ayudar a tomar decisiones preliminares y servir como referencia a médicos"
-            
             return cell
         case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VariableTextCell.self), for: indexPath) as! VariableTextCell
+            cell.MeaningVariable.text = "What does each variable mean"
+            return cell
+        case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VersionColumnCell.self), for: indexPath) as! VersionColumnCell
             cell.VersionLabel.text = "Version 1"
             
             return cell
-        case 2:
+        case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ConnectWithUsCell.self), for: indexPath) as! ConnectWithUsCell
             cell.ConnectWithUs.text = "Connect with us"
             return cell
-        case 3:
+        case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TwitterCell.self), for: indexPath) as! TwitterCell
             cell.TwitterLabel.text = "Follow us on Twitter"
             cell.TwiterLogoImageView.image = UIImage(named: "twitter")
             return cell
-        case 4:
+        case 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FacebookCell.self), for: indexPath) as! FacebookCell
             cell.FacebookLabel.text = "Like on Facebook"
             cell.FacebookLogoImageView.image = UIImage(named: "facebook")
