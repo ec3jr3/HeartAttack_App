@@ -498,7 +498,9 @@
 				DEVELOPMENT_TEAM = 5AQ8XTNS2M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ML_Classifier/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Heart Disease Classifier";
 				INFOPLIST_KEY_NSCameraUsageDescription = "You need to grant the app access to your camera in order to take photos";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please alllow to see current location.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You need to grant the app access to yout photo library so you can pick your favorite photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -528,7 +530,9 @@
 				DEVELOPMENT_TEAM = 5AQ8XTNS2M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ML_Classifier/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Heart Disease Classifier";
 				INFOPLIST_KEY_NSCameraUsageDescription = "You need to grant the app access to your camera in order to take photos";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please alllow to see current location.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You need to grant the app access to yout photo library so you can pick your favorite photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
