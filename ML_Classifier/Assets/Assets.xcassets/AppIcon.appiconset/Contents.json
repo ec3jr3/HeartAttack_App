@@ -11,6 +11,7 @@
       "size" : "20x20"
     },
     {
+      "filename" : "heart-122.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
@@ -21,6 +22,7 @@
       "size" : "29x29"
     },
     {
+      "filename" : "heart-738385_640 copy.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
@@ -31,11 +33,13 @@
       "size" : "40x40"
     },
     {
+      "filename" : "heart-120.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
+      "filename" : "heart-121.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -71,6 +75,7 @@
       "size" : "40x40"
     },
     {
+      "filename" : "heart-123.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
@@ -86,6 +91,7 @@
       "size" : "83.5x83.5"
     },
     {
+      "filename" : "heart-738385_1280.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
