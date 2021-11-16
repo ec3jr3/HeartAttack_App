@@ -29,6 +29,9 @@ class AboutUsViewController: UIViewController {
         //configuring header view
         headerImageView.LogoImageView.image = UIImage(named: "heartlogo")
         
+        //cell separator
+        tableView.separatorColor = .white
+        
     }
     
     @IBAction func emailButtonTapped(_ sender: UIButton){
@@ -79,34 +82,37 @@ extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: DescriptionTextCell.self), for: indexPath) as! DescriptionTextCell
-            cell.descriptionLabel.text = "Esta aplicación busca facilitar el acceso de herramientas que ayuden a predecir ataques al corazon, esto puede ayudar a tomar decisiones preliminares y servir como referencia a médicos"
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TitleTextCell.self), for: indexPath) as! TitleTextCell
+            cell.TitleLabel.text = "This app has 4 goals:"
             return cell
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VariableTextCell.self), for: indexPath) as! VariableTextCell
-            cell.MeaningVariable.text = "What does each variable mean"
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: DescriptionTextCell.self), for: indexPath) as! DescriptionTextCell
+            cell.descriptionLabel.text = "1) Improve the process of analysis and prediction of coronary heart disease using machine learning tools.                                      2) Make a resource that helps the general public.                                                                  3) Give medical professionals a helpful tool.                    4) Help people identify heart disease early and thus enter treatment as soon as possible."
             return cell
         case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VersionColumnCell.self), for: indexPath) as! VersionColumnCell
-            cell.VersionLabel.text = "Version 1"
-            
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VariableTextCell.self), for: indexPath) as! VariableTextCell
+            cell.MeaningVariable.text = "Classifier results"
             return cell
         case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VersionColumnCell.self), for: indexPath) as! VersionColumnCell
+            cell.VersionLabel.text = "Version 1"
+            return cell
+        case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ConnectWithUsCell.self), for: indexPath) as! ConnectWithUsCell
             cell.ConnectWithUs.text = "Connect with us"
             return cell
-        case 4:
+        case 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TwitterCell.self), for: indexPath) as! TwitterCell
             cell.TwitterLabel.text = "Follow us on Twitter"
             cell.TwiterLogoImageView.image = UIImage(named: "twitter")
             return cell
-        case 5:
+        case 6:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FacebookCell.self), for: indexPath) as! FacebookCell
             cell.FacebookLabel.text = "Like on Facebook"
             cell.FacebookLogoImageView.image = UIImage(named: "facebook")

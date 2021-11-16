@@ -9,6 +9,12 @@ import UIKit
 
 class AboutUsLogoView: UIView {
 
-    @IBOutlet var LogoImageView: UIImageView!
+    @IBOutlet var LogoImageView: UIImageView!{
+        didSet{
+            //LogoImageView.layer.cornerRadius = LogoImageView.bounds.width / 2
+            LogoImageView.layer.cornerRadius = 25
+            LogoImageView.clipsToBounds = true
+        }
+    }
     
 }
