@@ -30,7 +30,7 @@ class AboutUsViewController: UIViewController {
         headerImageView.LogoImageView.image = UIImage(named: "heartlogo")
         
         //cell separator
-        tableView.separatorColor = .white
+        tableView.separatorColor = .systemYellow
         
     }
     

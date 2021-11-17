@@ -40,7 +40,6 @@
 		B59FAB542707B97700D46B89 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FAB532707B97700D46B89 /* RoundedTextField.swift */; };
 		B59FAB572707BAA600D46B89 /* NewPersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FAB562707BAA600D46B89 /* NewPersonController.swift */; };
 		B5ACA4D327446DDE00FA9577 /* TitleTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ACA4D227446DDE00FA9577 /* TitleTextCell.swift */; };
-		B5ACA4D52744709700FA9577 /* ModelInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ACA4D42744709700FA9577 /* ModelInformationViewController.swift */; };
 		B5B049E12720BBCA00C2DC73 /* HeartPredictionClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B5B049E02720BBCA00C2DC73 /* HeartPredictionClassifier.mlmodel */; };
 		B5C63B92270EA99600D01D56 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B91270EA99600D01D56 /* AboutUsViewController.swift */; };
 		B5C63B94270EAAF800D01D56 /* AboutUsLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B93270EAAF800D01D56 /* AboutUsLogoView.swift */; };
@@ -91,7 +90,6 @@
 		B59FAB532707B97700D46B89 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		B59FAB562707BAA600D46B89 /* NewPersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonController.swift; sourceTree = "<group>"; };
 		B5ACA4D227446DDE00FA9577 /* TitleTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextCell.swift; sourceTree = "<group>"; };
-		B5ACA4D42744709700FA9577 /* ModelInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelInformationViewController.swift; sourceTree = "<group>"; };
 		B5B049E02720BBCA00C2DC73 /* HeartPredictionClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HeartPredictionClassifier.mlmodel; sourceTree = "<group>"; };
 		B5BBF76627151F060008BE32 /* ML_Classifier copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ML_Classifier copy-Info.plist"; path = "/Users/andrescastellanos/Desktop/Xcode/MyApps/ML_Classifier/ML_Classifier copy-Info.plist"; sourceTree = "<absolute>"; };
 		B5C63B91270EA99600D01D56 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 				B5C63B91270EA99600D01D56 /* AboutUsViewController.swift */,
 				B52261AC27125E7C000300A7 /* InformationViewController.swift */,
 				B5D1A0C12735A1E20070C070 /* QuickTestViewController.swift */,
-				B5ACA4D42744709700FA9577 /* ModelInformationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -326,7 +323,6 @@
 				B59863002703A774005078A4 /* TestViewController.swift in Sources */,
 				B5C63B98270EB21300D01D56 /* VersionColumnCell.swift in Sources */,
 				B50B3166271BC9680019B3B4 /* ThalliumCell.swift in Sources */,
-				B5ACA4D52744709700FA9577 /* ModelInformationViewController.swift in Sources */,
 				B50B3171271BCA850019B3B4 /* RestingBloodPressureCell.swift in Sources */,
 				B56A504E270648D50078E5D3 /* PersonDetailHeaderView.swift in Sources */,
 				B50B316D271BCA130019B3B4 /* ChestPainTypeCell.swift in Sources */,
