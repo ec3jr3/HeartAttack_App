@@ -40,6 +40,7 @@
 		B59FAB542707B97700D46B89 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FAB532707B97700D46B89 /* RoundedTextField.swift */; };
 		B59FAB572707BAA600D46B89 /* NewPersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FAB562707BAA600D46B89 /* NewPersonController.swift */; };
 		B5ACA4D327446DDE00FA9577 /* TitleTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ACA4D227446DDE00FA9577 /* TitleTextCell.swift */; };
+		B5ACA4D727459B2A00FA9577 /* MoreInfoTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ACA4D627459B2A00FA9577 /* MoreInfoTextCell.swift */; };
 		B5B049E12720BBCA00C2DC73 /* HeartPredictionClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B5B049E02720BBCA00C2DC73 /* HeartPredictionClassifier.mlmodel */; };
 		B5C63B92270EA99600D01D56 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B91270EA99600D01D56 /* AboutUsViewController.swift */; };
 		B5C63B94270EAAF800D01D56 /* AboutUsLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C63B93270EAAF800D01D56 /* AboutUsLogoView.swift */; };
@@ -90,6 +91,7 @@
 		B59FAB532707B97700D46B89 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		B59FAB562707BAA600D46B89 /* NewPersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonController.swift; sourceTree = "<group>"; };
 		B5ACA4D227446DDE00FA9577 /* TitleTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextCell.swift; sourceTree = "<group>"; };
+		B5ACA4D627459B2A00FA9577 /* MoreInfoTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoTextCell.swift; sourceTree = "<group>"; };
 		B5B049E02720BBCA00C2DC73 /* HeartPredictionClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HeartPredictionClassifier.mlmodel; sourceTree = "<group>"; };
 		B5BBF76627151F060008BE32 /* ML_Classifier copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ML_Classifier copy-Info.plist"; path = "/Users/andrescastellanos/Desktop/Xcode/MyApps/ML_Classifier/ML_Classifier copy-Info.plist"; sourceTree = "<absolute>"; };
 		B5C63B91270EA99600D01D56 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				B5ACA4D227446DDE00FA9577 /* TitleTextCell.swift */,
 				B5C63B95270EB14B00D01D56 /* DescriptionTextCell.swift */,
 				B5CC419E273F2FA5006693E3 /* VariableTextCell.swift */,
+				B5ACA4D627459B2A00FA9577 /* MoreInfoTextCell.swift */,
 				B5C63B97270EB21300D01D56 /* VersionColumnCell.swift */,
 				B5C63B99270EB52900D01D56 /* ConnectWithUsCell.swift */,
 				B5C63B9B270EB7F700D01D56 /* ContactUsLinkCell.swift */,
@@ -313,6 +316,7 @@
 				B50B3174271BCAF40019B3B4 /* NumberVesselsCell.swift in Sources */,
 				B50B317C271BCBE80019B3B4 /* RestingElectroCell.swift in Sources */,
 				B56A5050270650B60078E5D3 /* PersonDetailTextCell.swift in Sources */,
+				B5ACA4D727459B2A00FA9577 /* MoreInfoTextCell.swift in Sources */,
 				B50BB14D270FA0AA00CA81D5 /* SAButton.swift in Sources */,
 				B50B317A271BCBAB0019B3B4 /* STDepressionCell.swift in Sources */,
 				B5478D1F2717636D00C17BE1 /* PersonDetailThreeColumnCell.swift in Sources */,
