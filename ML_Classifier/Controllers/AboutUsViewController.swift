@@ -97,7 +97,7 @@ extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VariableTextCell.self), for: indexPath) as! VariableTextCell
-            cell.MeaningVariable.text = "Classifier results"
+            cell.MeaningVariable.text = "Classifier metrics:                                    Accuracy: 0.85                                                                  Absence Precision:0.80, Absence Recall:0.92, Absence f1-score:0.80                                                                 Presence Precision:0.92, Presence Recall:0.79, Presence f1-score:0.85    "
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VersionColumnCell.self), for: indexPath) as! VersionColumnCell

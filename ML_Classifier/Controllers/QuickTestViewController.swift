@@ -140,7 +140,7 @@ class QuickTestViewController: UITableViewController{
         
         //instructions for whenever the user tries to do the quick test
         if ageTextField.text == "" {
-            let TutorialController = UIAlertController(title: "Instructions", message: "Make sure that all the fields are fill", preferredStyle:.alert)
+            let TutorialController = UIAlertController(title: "Instructions", message: "Make sure that all the fields are filled", preferredStyle:.alert)
             let TutorialAction = UIAlertAction(title: "Got it", style: .default, handler: nil)
             TutorialController.addAction(TutorialAction)
             self.present(TutorialController, animated: true, completion: nil)
