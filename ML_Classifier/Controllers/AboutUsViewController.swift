@@ -82,7 +82,7 @@ extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return 9
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -99,23 +99,26 @@ extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VariableTextCell.self), for: indexPath) as! VariableTextCell
             cell.MeaningVariable.text = "Classifier metrics:                                    Accuracy: 0.85                                                                  Absence Precision:0.80, Absence Recall:0.92, Absence f1-score:0.80                                                                 Presence Precision:0.92, Presence Recall:0.79, Presence f1-score:0.85    "
             return cell
-        case 3: let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MoreInfoTextCell.self), for: indexPath) as! MoreInfoTextCell
+        case 3: let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: DataSetTextCell.self), for: indexPath) as! DataSetTextCell
+            cell.DataSetLabel.text = "Data set link"
+            return cell
+        case 4: let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MoreInfoTextCell.self), for: indexPath) as! MoreInfoTextCell
             cell.Moreinfor.text = "More informacion About Classifier Metrics"
             return cell
-        case 4:
+        case 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VersionColumnCell.self), for: indexPath) as! VersionColumnCell
             cell.VersionLabel.text = "Version 1"
             return cell
-        case 5:
+        case 6:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ConnectWithUsCell.self), for: indexPath) as! ConnectWithUsCell
             cell.ConnectWithUs.text = "Connect with us"
             return cell
-        case 6:
+        case 7:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TwitterCell.self), for: indexPath) as! TwitterCell
             cell.TwitterLabel.text = "Follow us on Twitter"
             cell.TwiterLogoImageView.image = UIImage(named: "twitter")
             return cell
-        case 7:
+        case 8:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FacebookCell.self), for: indexPath) as! FacebookCell
             cell.FacebookLabel.text = "Like on Facebook"
             cell.FacebookLogoImageView.image = UIImage(named: "facebook")
@@ -143,6 +146,14 @@ extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VariableTextCell.self), for: indexPath) as! VariableTextCell
             cell.isUserInteractionEnabled = false
         case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: DataSetTextCell.self), for: indexPath) as! DataSetTextCell
+            cell.isUserInteractionEnabled = true
+            if let urlToOpen = URL(string: "https://data.world/informatics-edu/heart-disease-prediction"){
+                UIApplication.shared.open(urlToOpen, options: [:]) { (done) in
+                    print("Link was opened successfully")
+                }
+            }
+        case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MoreInfoTextCell.self), for: indexPath) as! MoreInfoTextCell
             cell.isUserInteractionEnabled = true
             if let urlToOpen = URL(string: "https://blog.exsilio.com/all/accuracy-precision-recall-f1-score-interpretation-of-performance-measures/"){
@@ -150,13 +161,13 @@ extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
                     print("Link was opened successfully")
                 }
             }
-        case 4:
+        case 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VersionColumnCell.self), for: indexPath) as! VersionColumnCell
             cell.isUserInteractionEnabled = false
-        case 5:
+        case 6:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ConnectWithUsCell.self), for: indexPath) as! ConnectWithUsCell
             cell.isUserInteractionEnabled = false
-        case 6:
+        case 7:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TwitterCell.self), for: indexPath) as! TwitterCell
             cell.isUserInteractionEnabled = true
             if let urlToOpen = URL(string: "https://twitter.com"){
@@ -164,7 +175,7 @@ extension AboutUsViewController: UITableViewDataSource, UITableViewDelegate {
                     print("Link was opened successfully")
                 }
             }
-        case 7:
+        case 8:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FacebookCell.self), for: indexPath) as! FacebookCell
             cell.isUserInteractionEnabled = true
             if let urlToOpen = URL(string: "https://www.facebook.com") {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5009A7E2746FEC8001C3CCE /* DataSetTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5009A7D2746FEC8001C3CCE /* DataSetTextCell.swift */; };
 		B50B3166271BC9680019B3B4 /* ThalliumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B3165271BC9680019B3B4 /* ThalliumCell.swift */; };
 		B50B3168271BC9940019B3B4 /* CholesterolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B3167271BC9940019B3B4 /* CholesterolCell.swift */; };
 		B50B316B271BC9D70019B3B4 /* FastinBSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B316A271BC9D70019B3B4 /* FastinBSCell.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5009A7D2746FEC8001C3CCE /* DataSetTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSetTextCell.swift; sourceTree = "<group>"; };
 		B50B3165271BC9680019B3B4 /* ThalliumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThalliumCell.swift; sourceTree = "<group>"; };
 		B50B3167271BC9940019B3B4 /* CholesterolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CholesterolCell.swift; sourceTree = "<group>"; };
 		B50B316A271BC9D70019B3B4 /* FastinBSCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastinBSCell.swift; sourceTree = "<group>"; };
@@ -155,10 +157,8 @@
 				B59862F72703A5D8005078A4 /* Controllers */,
 				B59862FA2703A5FB005078A4 /* Model */,
 				B59862F92703A5F2005078A4 /* Assets */,
-				B59862E32703A5C2005078A4 /* AppDelegate.swift */,
-				B59862E52703A5C2005078A4 /* SceneDelegate.swift */,
+				B5C16F592746E2C500344535 /* app life cycle */,
 				B59862F12703A5C4005078A4 /* Info.plist */,
-				B50BB14C270FA0A900CA81D5 /* SAButton.swift */,
 			);
 			path = ML_Classifier;
 			sourceTree = "<group>";
@@ -166,11 +166,8 @@
 		B59862F72703A5D8005078A4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B59862FD2703A743005078A4 /* ProfileTableViewController.swift */,
-				B59862FF2703A774005078A4 /* TestViewController.swift */,
-				B56A504B2706418B0078E5D3 /* ProfileDetailViewController.swift */,
+				B5C16F582746E2A900344535 /* old controller */,
 				B56A505427066E5E0078E5D3 /* NavigationController.swift */,
-				B59FAB562707BAA600D46B89 /* NewPersonController.swift */,
 				B5C63B91270EA99600D01D56 /* AboutUsViewController.swift */,
 				B52261AC27125E7C000300A7 /* InformationViewController.swift */,
 				B5D1A0C12735A1E20070C070 /* QuickTestViewController.swift */,
@@ -191,6 +188,7 @@
 				B5ACA4D227446DDE00FA9577 /* TitleTextCell.swift */,
 				B5C63B95270EB14B00D01D56 /* DescriptionTextCell.swift */,
 				B5CC419E273F2FA5006693E3 /* VariableTextCell.swift */,
+				B5009A7D2746FEC8001C3CCE /* DataSetTextCell.swift */,
 				B5ACA4D627459B2A00FA9577 /* MoreInfoTextCell.swift */,
 				B5C63B97270EB21300D01D56 /* VersionColumnCell.swift */,
 				B5C63B99270EB52900D01D56 /* ConnectWithUsCell.swift */,
@@ -223,6 +221,7 @@
 		B59862FA2703A5FB005078A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B50BB14C270FA0A900CA81D5 /* SAButton.swift */,
 				B59863052703B574005078A4 /* Person.swift */,
 				B59863072703B925005078A4 /* PersonDiffableDataSource.swift */,
 			);
@@ -236,6 +235,26 @@
 				B59862EE2703A5C4005078A4 /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		B5C16F582746E2A900344535 /* old controller */ = {
+			isa = PBXGroup;
+			children = (
+				B59862FD2703A743005078A4 /* ProfileTableViewController.swift */,
+				B59862FF2703A774005078A4 /* TestViewController.swift */,
+				B56A504B2706418B0078E5D3 /* ProfileDetailViewController.swift */,
+				B59FAB562707BAA600D46B89 /* NewPersonController.swift */,
+			);
+			path = "old controller";
+			sourceTree = "<group>";
+		};
+		B5C16F592746E2C500344535 /* app life cycle */ = {
+			isa = PBXGroup;
+			children = (
+				B59862E32703A5C2005078A4 /* AppDelegate.swift */,
+				B59862E52703A5C2005078A4 /* SceneDelegate.swift */,
+			);
+			path = "app life cycle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +352,7 @@
 				B5C63B9A270EB52900D01D56 /* ConnectWithUsCell.swift in Sources */,
 				B50B3178271BCB700019B3B4 /* TheSlopeExerciseSTCell.swift in Sources */,
 				B56A505527066E5E0078E5D3 /* NavigationController.swift in Sources */,
+				B5009A7E2746FEC8001C3CCE /* DataSetTextCell.swift in Sources */,
 				B5C63B9C270EB7F700D01D56 /* ContactUsLinkCell.swift in Sources */,
 				B56A50522706577D0078E5D3 /* PersonDetailTwoColumnCell.swift in Sources */,
 				B5C63B96270EB14C00D01D56 /* DescriptionTextCell.swift in Sources */,

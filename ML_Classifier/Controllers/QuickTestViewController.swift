@@ -226,7 +226,7 @@ class QuickTestViewController: UITableViewController{
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         optionMenu.addAction(cancelAction)
         
-        //run test axction
+        //run test action
         let TestActionHandle =  { (action:UIAlertAction!) -> Void in
             
             //converting every single textfiel into a Double varible
